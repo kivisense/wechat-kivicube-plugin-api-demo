@@ -1,0 +1,11 @@
+<kivicube-scene
+    class="kivicube"
+    scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
+    hideTakePhoto="{{true}}"
+    bindready="ready"
+    bindsceneStart="sceneStart"
+/>
+
+<cover-view class="click">可点击模型，触发toast提示</cover-view>
+<cover-view class="hide" bind:tap="hide">点击隐藏</cover-view>
+<cover-view class="show" bind:tap="show">点击显示</cover-view>

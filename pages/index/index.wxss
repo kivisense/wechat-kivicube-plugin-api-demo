@@ -1,0 +1,14 @@
+page {
+    background-color: aliceblue;
+    padding: 10vw 5vw 0;
+    box-sizing: border-box;
+}
+
+navigator {
+    text-decoration: underline;
+    margin-top: 15px;
+}
+
+.second {
+    padding-left: 10vw;
+}

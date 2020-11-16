@@ -1,0 +1,16 @@
+<kivicube-scene
+    class="kivicube"
+    scene-id="93eawlW1uO4bHksz3ALspPtuixH2DPoG"
+    hideTakePhoto="{{true}}"
+    bindready="ready"
+    bindloadSceneEnd="loadEnd"
+    bindsceneStart="sceneStart"
+/>
+
+<cover-view wx:if="{{showOperate}}" class="operate">
+    <cover-view class="play" bind:tap="play">播放</cover-view>
+    <cover-view class="pause" bind:tap="pause">暂停</cover-view>
+    <cover-view class="stop" bind:tap="stop">停止</cover-view>
+    <cover-view class="playback" bind:tap="playback">重新播放</cover-view>
+    <cover-view class="playback" bind:tap="fullScreenPlay">全屏播放</cover-view>
+</cover-view>

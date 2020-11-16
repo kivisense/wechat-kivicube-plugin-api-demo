@@ -1,0 +1,25 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/base/base",
+    "pages/api/skipCloudar/skipCloudar",
+    "pages/api/common/common",
+    "pages/api/video/video",
+    "pages/api/model/model",
+    "pages/api/audio/audio"
+  ],
+  "plugins": {
+    "kivicube": {
+      "version": "1.3.4",
+      "provider": "wx3bbab3920eabccb2"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Kivicube API Demo",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
