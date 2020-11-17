@@ -1,0 +1,2 @@
+<image wx:if="{{photoPath}}" mode="widthFix" src="{{photoPath}}"></image>
+<button class="save" bind:tap="save">保存照片</button>

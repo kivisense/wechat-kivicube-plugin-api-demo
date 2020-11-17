@@ -4,7 +4,7 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": false,
     "postcss": true,
@@ -38,7 +38,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.14.0",
-  "appid": "wxac5704fcf87af2aa",
+  "appid": "wx3bbab3920eabccb2",
   "projectname": "wechat-kivicube-plugin-api-demo",
   "debugOptions": {
     "hidedInDevtools": []

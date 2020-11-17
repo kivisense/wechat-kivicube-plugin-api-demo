@@ -1,0 +1,14 @@
+<kivicube-scene
+    class="kivicube"
+    scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
+    hideTakePhoto="{{true}}"
+    bindready="ready"
+    bindsceneStart="sceneStart"
+/>
+
+<cover-view
+    wx:if="{{showTakePhoto}}"
+    class="take-photo"
+    bind:tap="takePhoto">
+    自定义拍照按钮
+</cover-view>

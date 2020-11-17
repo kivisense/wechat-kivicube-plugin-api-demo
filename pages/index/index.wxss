@@ -1,12 +1,18 @@
 page {
     background-color: aliceblue;
-    padding: 10vw 5vw 0;
+    padding: 10vw 5vw;
     box-sizing: border-box;
 }
 
+.title {
+    margin-top: 20px;
+}
+
 navigator {
-    text-decoration: underline;
     margin-top: 15px;
+}
+navigator[url^=".."] {
+    text-decoration: underline;
 }
 
 .second {

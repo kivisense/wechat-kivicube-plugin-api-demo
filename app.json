@@ -6,7 +6,17 @@
     "pages/api/common/common",
     "pages/api/video/video",
     "pages/api/model/model",
-    "pages/api/audio/audio"
+    "pages/api/audio/audio",
+    "pages/api/autoPlay/autoPlay",
+    "pages/api/envMap/envMap",
+    "pages/api/simpleAnimation/simpleAnimation",
+    "pages/api/tweenAnimation/tweenAnimation",
+    "pages/api/photo/photo",
+    "pages/api/photo/view/viewPhoto",
+    "pages/api/camera/camera",
+    "pages/api/penetrateUI/penetrateUI",
+    "pages/api/imageSprite/imageSprite",
+    "pages/api/manage/manage"
   ],
   "plugins": {
     "kivicube": {
