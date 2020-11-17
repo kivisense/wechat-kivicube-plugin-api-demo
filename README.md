@@ -1,6 +1,6 @@
 # Kivicube插件高级API使用说明文档
 
-## 一、[基础【如何获取高级API】](../api/base/)
+## 一、[基础【如何获取高级API】](../../tree/master/pages/base/)
 
 ## 二、素材对象【如何使用高级API】
 
