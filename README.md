@@ -1,39 +1,43 @@
 # Kivicube插件高级API使用说明文档
 
-## 一、[基础【如何获取高级API】](../../tree/master/pages/base/)
+## 源码目录
 
-## 二、素材对象【如何使用高级API】
+### 一、[基础【如何获取高级API】](../../tree/master/pages/base/)
 
-### 1、素材对象共有API【修改素材位置/大小/旋转、隐藏/显示、监听点击事件】
+### 二、素材对象【如何使用高级API】
 
-### 2、视频/透明视频独有API【控制视频播放，监听相关事件】
+#### 1、[素材对象共有API【修改素材位置/大小/旋转、隐藏/显示、监听点击事件】](../../tree/master/pages/api/common/)
 
-### 3、模型独有API【控制动画播放，监听相关事件】
+#### 2、[视频/透明视频独有API【控制视频播放，监听相关事件】](../../tree/master/pages/api/video/)
 
-### 4、音乐独有API【控制音乐播放，监听相关事件】
+#### 3、[模型独有API【控制动画播放，监听相关事件】](../../tree/master/pages/api/model/)
 
-## 三、特殊素材(与编辑器后台无关)【如何使用高级API】
+#### 4、[音乐独有API【控制音乐播放，监听相关事件】](../../tree/master/pages/api/audio/)
 
-### 1、自定义环境贴图
+### 三、特殊素材(与编辑器后台无关)【如何使用高级API】
 
-### 2、精灵图序列
+#### 1、[自定义环境贴图](../../tree/master/pages/api/envMap/)
 
-## 四、场景【如何使用高级API】
+#### 2、[精灵图序列](../../tree/master/pages/api/imageSprite/)
 
-### 1、云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】
+### 四、场景【如何使用高级API】
 
-### 2、自动开始播放音乐、视频和模型动画【不依赖后台配置】
+#### 1、[云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】](../../tree/master/pages/api/skipCloudar/)
 
-### 3、动态增删改场景素材
+#### 2、[自动开始播放音乐、视频和模型动画【不依赖后台配置】](../../tree/master/pages/api/autoPlay/)
 
-### 4、简单的自定义动画
+#### 3、[动态增删改场景素材](../../tree/master/pages/api/manage/)
 
-### 5、实现缓动动画
+#### 4、[简单的自定义动画](../../tree/master/pages/api/simpleAnimation/)
 
-### 6、拍照处理
+#### 5、[实现缓动动画](../../tree/master/pages/api/tweenAnimation/)
 
-### 7、动态切换前后摄像头
+#### 6、[拍照处理](../../tree/master/pages/api/photo/)
 
-### 8、穿透自定义UI点击到模型
+#### 7、[动态切换前后摄像头](../../tree/master/pages/api/camera/)
+
+#### 8、[穿透自定义UI点击到模型](../../tree/master/pages/api/penetrateUI/)
+
+## 详细说明
 
 待撰写
