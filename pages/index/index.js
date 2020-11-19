@@ -1,9 +1,4 @@
-//index.js
-
 Page({
-  data: {
-  },
-  onLoad(){
-    
-  },
-})
+  data: {},
+  onLoad() {},
+});

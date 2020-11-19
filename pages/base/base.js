@@ -1,9 +1,9 @@
 Page({
   /**
    * 所有高级API都是基于场景管理对象view延伸出来的。
-   * 
+   *
    * 通过kivicube-scene组件的ready事件对象，可获取场景管理对象view。
-   * 
+   *
    * 获取场景中某个具体的素材对象，可查看sceneStart部分。
    * 获取到素材对象后，即可通过API对其进行操控。
    */
@@ -48,7 +48,7 @@ Page({
 
   /**
    * 只能在loadSceneEnd及之后的事件中才能获取到素材对象。
-   * 
+   *
    * 通过场景管理对象，获取具体的素材对象。
    */
   sceneStart() {
@@ -60,9 +60,9 @@ Page({
       const { name } = this.view.sceneInfo.objects[0];
       // 不同类型的素材对象，既拥有独有的API，也拥有共有的API。
       // 详细使用在页面/pages/api/common/common查看共有API
-      // 页面/pages/api/video/video, /pages/api/model/model, 
+      // 页面/pages/api/video/video, /pages/api/model/model,
       // /pages/api/audio/audio，查看独有API
       console.log(this.view.getObject(name));
     }
-  }
-})
+  },
+});

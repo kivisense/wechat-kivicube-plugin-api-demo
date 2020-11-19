@@ -7,23 +7,20 @@ Page({
     showOperate: false,
   },
   ready({ detail: view }) {
-      this.view = view;
-  },
-
-  loadEnd() {
-      setTimeout(() => {
-          this.view.skipCloudar();
-      }, 0);
+    this.view = view;
+    this.view.skipCloudar();
   },
 
   async sceneStart() {
-      this.setData({ showOperate: true });
+    this.setData({ showOperate: true });
   },
 
   async addImage() {
     wx.showLoading({ title: "下载中...", mask: true });
     try {
-      const imageAb = await requestFile("https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/image.jpg");
+      const imageAb = await requestFile(
+        "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/image.jpg"
+      );
       const image = await this.view.addImage(imageAb, "jpg", progress);
 
       image.position.set(0, 1, 0);
@@ -32,7 +29,7 @@ Page({
 
       image.onBeforeRender = () => {
         image.rotation.y += 0.01;
-      }
+      };
 
       this.image = image;
 
@@ -47,9 +44,15 @@ Page({
     wx.showLoading({ title: "下载中...", mask: true });
     try {
       // 既支持下载为本地文件路径，也支持直接使用url。
-      const videoUrlOrPath = await downloadFile("https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/video.mp4");
+      const videoUrlOrPath = await downloadFile(
+        "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/video.mp4"
+      );
       const defaultThumbnailUrl = ""; // 如果视频显示不出来，则显示默认的缩略图。传递为空则不显示缩略图。
-      const video = await this.view.addVideo(videoUrlOrPath, defaultThumbnailUrl, progress);
+      const video = await this.view.addVideo(
+        videoUrlOrPath,
+        defaultThumbnailUrl,
+        progress
+      );
 
       video.position.set(0, -1, 0);
       video.rotation.set(0, 0, 0);
@@ -71,9 +74,15 @@ Page({
     wx.showLoading({ title: "下载中...", mask: true });
     try {
       // 既支持下载为本地文件路径，也支持直接使用url。
-      const videoUrlOrPath = await downloadFile("https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/alpha-video.mp4");
+      const videoUrlOrPath = await downloadFile(
+        "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/alpha-video.mp4"
+      );
       const defaultThumbnailUrl = ""; // 如果视频显示不出来，则显示默认的缩略图。传递为空则不显示缩略图。
-      const video = await this.view.addAlphaVideo(videoUrlOrPath, defaultThumbnailUrl, progress);
+      const video = await this.view.addAlphaVideo(
+        videoUrlOrPath,
+        defaultThumbnailUrl,
+        progress
+      );
 
       video.position.set(2, -1, 0);
       video.rotation.set(0, Math.PI / -4, 0);
@@ -94,7 +103,8 @@ Page({
   async addModel() {
     wx.showLoading({ title: "下载中...", mask: true });
     try {
-      const modelUrl = "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/model.glb";
+      const modelUrl =
+        "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/model.glb";
       const modelAb = await requestFile(modelUrl);
       // 如果模型是gltf格式，则必须传递第二个参数。否则可为空
       const model = await this.view.addModel(modelAb, modelUrl, progress);
@@ -106,7 +116,7 @@ Page({
       const [name] = model.getAnimationNames();
       model.playAnimation({
         name,
-        loop: true
+        loop: true,
       });
 
       this.model = model;
@@ -122,9 +132,11 @@ Page({
     wx.showLoading({ title: "下载中...", mask: true });
     try {
       // 既支持下载为本地文件路径，也支持直接使用url。
-      const audioUrlOrPath = await downloadFile("https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/audio.mp3");
+      const audioUrlOrPath = await downloadFile(
+        "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/audio.mp3"
+      );
       const audio = await this.view.addAudio(audioUrlOrPath, progress);
-      
+
       audio.loop = true;
       audio.play();
 
@@ -174,5 +186,5 @@ Page({
 
   clear() {
     this.view.clear();
-  }
-})
+  },
+});

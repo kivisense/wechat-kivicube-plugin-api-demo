@@ -3,7 +3,6 @@
     scene-id="Pd6b9beoc2ZgSZVMuMajAoRdhq79rday"
     hideTakePhoto="{{true}}"
     bindready="ready"
-    bindloadSceneEnd="loadEnd"
     bindsceneStart="sceneStart"
 />
 

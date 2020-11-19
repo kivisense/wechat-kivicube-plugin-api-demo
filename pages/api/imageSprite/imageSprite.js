@@ -2,7 +2,7 @@ import { errorHandler, requestFile } from "../../../utils/utils";
 
 Page({
   data: {
-    showOperate: false
+    showOperate: false,
   },
 
   onLoad() {
@@ -14,12 +14,7 @@ Page({
 
   ready({ detail: view }) {
     this.view = view;
-  },
-
-  loadEnd() {
-    setTimeout(() => {
-      this.view.skipCloudar();
-    }, 0);
+    this.view.skipCloudar();
   },
 
   async sceneStart() {
@@ -35,7 +30,7 @@ Page({
         lastRowEmptyCol: 2,
         width: 1,
         height: 1,
-        fps: 15
+        fps: 15,
       });
 
       imageSprite.position.y = 2.5;
@@ -45,7 +40,7 @@ Page({
       imageSprite.addEventListener("spriteEnded", ({ sprites }) => {
         wx.showToast({
           title: `精灵图自然播放完毕，序列名称：${sprites.join(",")}`,
-          icon: "none"
+          icon: "none",
         });
       });
       imageSprite.addEventListener("spriteLoop", ({ sprites, loopDelta }) => {
@@ -53,7 +48,7 @@ Page({
           title: `精灵图循环播放完毕${loopDelta}次，序列名称：${sprites.join(
             ","
           )}`,
-          icon: "none"
+          icon: "none",
         });
       });
 
@@ -72,5 +67,5 @@ Page({
   },
   pause() {
     this.imageSprite.pauseSprite();
-  }
+  },
 });

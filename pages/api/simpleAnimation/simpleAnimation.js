@@ -22,5 +22,5 @@ Page({
 
       model.position.x += step;
     };
-  }
+  },
 });

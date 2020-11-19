@@ -3,11 +3,11 @@
     scene-id="ICGvXW86u9rz8N6P09IwjaJAQxqzL4Cy"
     hideTakePhoto="{{true}}"
     bindready="ready"
-    bindloadSceneEnd="loadEnd"
     bindsceneStart="sceneStart"
 />
 
 <cover-view wx:if="{{showOperate}}" class="operate">
     <cover-view bind:tap="cubeMap">使用cube类型环境贴图</cover-view>
     <cover-view bind:tap="panorama">使用panorama类型环境贴图</cover-view>
+    <cover-view bind:tap="remove">移除环境贴图</cover-view>
 </cover-view>

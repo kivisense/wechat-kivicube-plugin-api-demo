@@ -1,6 +1,6 @@
 Page({
   data: {
-    photoPath: ""
+    photoPath: "",
   },
   onLoad({ photo }) {
     this.setData({ photoPath: decodeURIComponent(photo) });
@@ -15,7 +15,7 @@ Page({
       fail(e) {
         console.error("保存照片失败", e);
         wx.showToast({ title: "保存照片失败", icon: "none" });
-      }
+      },
     });
-  }
-})
+  },
+});

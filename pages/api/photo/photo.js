@@ -2,7 +2,7 @@ import { errorHandler } from "../../../utils/utils";
 
 Page({
   data: {
-    showTakePhoto: false
+    showTakePhoto: false,
   },
 
   ready({ detail: view }) {
@@ -18,11 +18,13 @@ Page({
       wx.showLoading({ title: "拍照中...", mask: true });
       const photoPath = await this.view.takePhoto();
       wx.hideLoading();
-      
-      wx.navigateTo({ url: `./view/viewPhoto?photo=${encodeURIComponent(photoPath)}` });
+
+      wx.navigateTo({
+        url: `./view/viewPhoto?photo=${encodeURIComponent(photoPath)}`,
+      });
     } catch (e) {
       wx.hideLoading();
       errorHandler(e);
     }
-  }
+  },
 });

@@ -22,7 +22,7 @@ Page({
       rx: 0,
       ry: 0,
       rz: 0,
-      scale: 0.1
+      scale: 0.1,
     };
     const endTransform = {
       px: 1,
@@ -31,7 +31,7 @@ Page({
       rx: Math.PI,
       ry: Math.PI / 2,
       rz: Math.PI * 2,
-      scale: 1.5
+      scale: 1.5,
     };
     const duration = 5000;
     new TWEEN.Tween(startTransform)
@@ -44,5 +44,5 @@ Page({
       })
       .repeat(Infinity)
       .start();
-  }
+  },
 });

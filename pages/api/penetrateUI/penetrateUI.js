@@ -1,21 +1,16 @@
 Page({
   ready({ detail: view }) {
-      this.view = view;
-  },
-
-  loadEnd() {
-      setTimeout(() => {
-          this.view.skipCloudar();
-      }, 0);
+    this.view = view;
+    this.view.skipCloudar();
   },
 
   sceneStart() {
-      const { name } = this.view.sceneInfo.objects[0];
-      const model = this.view.getObject(name);
+    const { name } = this.view.sceneInfo.objects[0];
+    const model = this.view.getObject(name);
 
-      model.addEventListener("click", () => {
-          wx.showToast({ icon: "none", title: "模型被点击" });
-      });
+    model.addEventListener("click", () => {
+      wx.showToast({ icon: "none", title: "模型被点击" });
+    });
   },
 
   tap(e) {
@@ -26,5 +21,5 @@ Page({
       // 点击屏幕右边缘时，第一个参数值应该是screenWidth / 2。第二个参数同理。
       this.view.dispatchTouchEvent(pageX, pageY);
     }
-  }
-})
+  },
+});

@@ -29,7 +29,7 @@ export function requestFile(url) {
           reject(new Error(`下载素材(${url})发生错误(状态码-${statusCode})`));
         }
       },
-      fail: reject
+      fail: reject,
     });
   });
 }
@@ -42,12 +42,10 @@ export function downloadFile(url) {
         if (statusCode === 200) {
           resolve(tempFilePath);
         } else {
-          reject(
-            new Error(`下载文件：${url} 失败。statusCode：${statusCode}`)
-          );
+          reject(new Error(`下载文件：${url} 失败。statusCode：${statusCode}`));
         }
       },
       fail: reject,
     });
   });
-};
+}
