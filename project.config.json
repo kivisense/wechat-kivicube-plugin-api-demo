@@ -37,7 +37,7 @@
     "minifyWXSS": true
   },
   "compileType": "miniprogram",
-  "libVersion": "2.14.0",
+  "libVersion": "2.14.1",
   "appid": "wx3bbab3920eabccb2",
   "projectname": "wechat-kivicube-plugin-api-demo",
   "debugOptions": {

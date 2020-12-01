@@ -16,11 +16,12 @@
     "pages/api/camera/camera",
     "pages/api/penetrateUI/penetrateUI",
     "pages/api/imageSprite/imageSprite",
-    "pages/api/manage/manage"
+    "pages/api/manage/manage",
+    "pages/api/image2d-tracking/image2d-tracking"
   ],
   "plugins": {
     "kivicube": {
-      "version": "1.3.5",
+      "version": "1.4.0",
       "provider": "wx3bbab3920eabccb2"
     }
   },

@@ -26,4 +26,5 @@
     <navigator url="../api/photo/photo">6、拍照处理</navigator>
     <navigator url="../api/camera/camera">7、动态切换前后摄像头</navigator>
     <navigator url="../api/penetrateUI/penetrateUI">8、穿透自定义UI点击到模型</navigator>
+    <navigator url="../api/image2d-tracking/image2d-tracking">9、使用license开通图像追踪功能</navigator>
 </view>
