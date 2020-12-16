@@ -1,0 +1,15 @@
+<kivicube-collection
+    class="kivicube"
+    collection-id="b46rfc"
+    hideTakePhoto="{{true}}"
+    hideBackToScan="{{true}}"
+    bindready="ready"
+    bindcloudarStart="cloudarStart"
+    bindsceneStart="sceneStart"
+/>
+
+<cover-view wx:if="{{showScanTip}}" class="scan-tip">
+    <cover-image src="./marker1.jpg"></cover-image>
+    <cover-image src="./marker2.jpg"></cover-image>
+    <cover-view class="tip-text">请对准识别图</cover-view>
+</cover-view>

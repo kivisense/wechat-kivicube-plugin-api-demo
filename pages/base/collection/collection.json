@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "kivicube-collection": "plugin://kivicube/kivicube-collection"
+  }
+}

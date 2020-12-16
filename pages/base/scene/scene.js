@@ -35,6 +35,9 @@ Page({
           title
         }
       },
+      setting: {
+        skipScanMarker // 是否跳过扫描识别图阶段
+      },
       objects: [ // 编辑器中增加的所有素材信息列表
         {
           id,

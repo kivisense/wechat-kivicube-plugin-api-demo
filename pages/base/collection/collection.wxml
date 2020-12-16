@@ -1,0 +1,6 @@
+<kivicube-collection
+    class="kivicube"
+    collection-id="b46rfc"
+    bindready="ready"
+    bindsceneReady="sceneReady"
+/>

@@ -1,4 +1,6 @@
-<navigator class="title" url="../base/base">一、基础【如何获取高级API】</navigator>
+<view class="header">场景</view>
+
+<navigator class="title" url="../base/scene/scene">一、基础【如何获取高级API】</navigator>
 
 <view class="title">二、素材对象【如何使用高级API】</view>
 <view class="second">
@@ -6,6 +8,7 @@
     <navigator url="../api/video/video">2、视频/透明视频独有API【控制视频播放，监听相关事件】</navigator>
     <navigator url="../api/model/model">3、模型独有API【控制动画播放，监听相关事件】</navigator>
     <navigator url="../api/audio/audio">4、音乐独有API【控制音乐播放，监听相关事件】</navigator>
+    <navigator url="../api/mask/mask">5、将3d素材指定为遮罩</navigator>
 </view>
 
 <view class="title">三、特殊素材(与编辑器后台无关)【如何使用高级API】</view>
@@ -27,4 +30,21 @@
     <navigator url="../api/camera/camera">7、动态切换前后摄像头</navigator>
     <navigator url="../api/penetrateUI/penetrateUI">8、穿透自定义UI点击到模型</navigator>
     <navigator url="../api/image2d-tracking/image2d-tracking">9、使用license开通图像追踪功能</navigator>
+</view>
+
+<view class="header">合辑</view>
+
+<navigator class="title" url="../base/collection/collection">一、基础【如何获取高级API】</navigator>
+
+<view class="title">二、合辑【如何使用高级API】</view>
+<view class="second">
+    <navigator url="../api/backToScan/backToScan">
+        1、云识别类型合辑 - 自定义返回扫描功能
+    </navigator>
+    <navigator url="../api/cloudar/cloudar">
+        2、云识别开启与关闭
+    </navigator>
+    <navigator url="../api/scene/scene">
+        2、场景的打开与关闭
+    </navigator>
 </view>

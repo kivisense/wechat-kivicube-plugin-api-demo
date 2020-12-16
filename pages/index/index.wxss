@@ -1,7 +1,12 @@
 page {
     background-color: aliceblue;
-    padding: 10vw 5vw;
+    padding: 0 5vw 10vw;
     box-sizing: border-box;
+}
+
+.header {
+    margin-top: 30px;
+    font-size: 48rpx;
 }
 
 .title {

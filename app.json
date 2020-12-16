@@ -1,7 +1,7 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/base/base",
+    "pages/base/scene/scene",
     "pages/api/skipCloudar/skipCloudar",
     "pages/api/common/common",
     "pages/api/video/video",
@@ -17,11 +17,16 @@
     "pages/api/penetrateUI/penetrateUI",
     "pages/api/imageSprite/imageSprite",
     "pages/api/manage/manage",
-    "pages/api/image2d-tracking/image2d-tracking"
+    "pages/api/image2d-tracking/image2d-tracking",
+    "pages/api/mask/mask",
+    "pages/base/collection/collection",
+    "pages/api/backToScan/backToScan",
+    "pages/api/cloudar/cloudar",
+    "pages/api/scene/scene"
   ],
   "plugins": {
     "kivicube": {
-      "version": "1.4.0",
+      "version": "1.5.1",
       "provider": "wx3bbab3920eabccb2"
     }
   },
