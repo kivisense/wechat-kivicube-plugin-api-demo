@@ -45,6 +45,9 @@
         2、云识别开启与关闭
     </navigator>
     <navigator url="../api/scene/scene">
-        2、场景的打开与关闭
+        3、场景的打开与关闭
+    </navigator>
+    <navigator url="../api/collectionPhoto/collectionPhoto">
+        4、拍照
     </navigator>
 </view>

@@ -22,11 +22,12 @@
     "pages/base/collection/collection",
     "pages/api/backToScan/backToScan",
     "pages/api/cloudar/cloudar",
-    "pages/api/scene/scene"
+    "pages/api/scene/scene",
+    "pages/api/collectionPhoto/collectionPhoto"
   ],
   "plugins": {
     "kivicube": {
-      "version": "1.5.1",
+      "version": "1.5.6",
       "provider": "wx3bbab3920eabccb2"
     }
   },

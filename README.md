@@ -56,6 +56,8 @@
 
 ##### 3、[场景的打开与关闭](../../tree/master/pages/api/scene/)
 
+##### 4、[拍照处理](../../tree/master/pages/api/collectionPhoto/)
+
 ## 详细说明
 
 待撰写
