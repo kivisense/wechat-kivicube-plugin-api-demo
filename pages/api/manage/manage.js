@@ -11,7 +11,7 @@ Page({
     this.view.skipCloudar();
   },
 
-  async sceneStart() {
+  sceneStart() {
     this.setData({ showOperate: true });
   },
 

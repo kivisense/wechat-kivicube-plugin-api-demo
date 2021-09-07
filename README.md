@@ -30,7 +30,7 @@
 
 ##### 2、[自动开始播放音乐、视频和模型动画【不依赖后台配置】](../../tree/master/pages/api/autoPlay/)
 
-##### 3、[动态增删改场景素材](../../tree/master/pages/api/manage/)
+##### 3、[动态增删改场景素材](../../tree/master/pages/api/manage/)【**如何使用外部素材**】
 
 ##### 4、[简单的自定义动画](../../tree/master/pages/api/simpleAnimation/)
 
