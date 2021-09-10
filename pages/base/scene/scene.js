@@ -1,8 +1,8 @@
 Page({
   /**
-   * 所有高级API都是基于场景管理对象view延伸出来的。
+   * 所有高级API对象都是通过ready事件传递出来的。
    *
-   * 通过kivicube-scene组件的ready事件对象，可获取场景管理对象view。
+   * 通过kivicube-scene组件的ready事件对象detail属性，可获取高级API对象view。
    *
    * 获取场景中某个具体的素材对象，可查看sceneStart部分。
    * 获取到素材对象后，即可通过API对其进行操控。
@@ -50,11 +50,13 @@ Page({
   },
 
   /**
-   * 只能在loadSceneEnd及之后的事件中才能获取到素材对象。
-   *
-   * 通过场景管理对象，获取具体的素材对象。
+   * 通过高级API对象，获取具体的素材对象。
    */
   sceneStart() {
+    /**
+     * 注意：只能在loadSceneEnd及之后的事件触发后，才能获取到素材对象。
+     */
+
     // 既可一次性获取所有的素材对象
     console.log(this.view.getAllObject());
 

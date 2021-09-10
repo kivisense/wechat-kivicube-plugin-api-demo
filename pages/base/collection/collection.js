@@ -1,10 +1,14 @@
 Page({
   /**
-   * 所有高级API都是基于合辑管理对象collection延伸出来的。
+   * 所有高级API对象都是通过ready事件传递出来的。
    *
-   * 通过kivicube-collection组件的ready事件对象，可获取合辑管理对象collection。
+   * 通过kivicube-collection组件的ready事件对象象detail属性，可获取高级API对象collection。
    */
   ready({ detail: collection }) {
+    /**
+     * 注意：对象collection和kivicube-scene组件的view对象完全不一样(API和属性都不一样)。
+     * 详细可参考README.md中的说明。
+     */
     this.collection = collection;
 
     // 同时可查看当前合辑的基础信息。

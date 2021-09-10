@@ -11,6 +11,9 @@ Page({
     this.setData({ showOperate: true });
   },
 
+  /**
+   * 注意：只能在loadSceneEnd及之后的事件触发后，才能通过view.getObject获取到素材对象。
+   */
   enableMask() {
     /**
      * 只要是3d内容的素材，都可以指定为遮罩。比如图片、视频和模型。

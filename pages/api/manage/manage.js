@@ -2,11 +2,21 @@ import { errorHandler, requestFile, downloadFile } from "../../../utils/utils";
 
 const progress = (p) => console.log(p);
 
+/**
+ * 注意1：只能在loadSceneEnd及之后的事件触发后，才能通过view.getObject获取到素材对象。
+ *
+ * 注意2：如果要在合辑中动态增加场景内容，请参考README.md之中的“常见问题”说明。
+ */
 Page({
   data: {
     showOperate: false,
   },
   ready({ detail: view }) {
+    /**
+     * 注意：这里的view必须是kivicube-scene组件的高级API对象view，
+     * 而不能是kivicube-collection组件通过ready事件传递的高级API对象collection，
+     * 详细请参考README.md之中的“常见问题”说明。
+     */
     this.view = view;
     this.view.skipCloudar();
   },

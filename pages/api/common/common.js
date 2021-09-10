@@ -2,6 +2,10 @@ Page({
   ready({ detail: view }) {
     this.view = view;
   },
+
+  /**
+   * 注意：只能在loadSceneEnd及之后的事件触发后，才能通过view.getObject获取到素材对象。
+   */
   sceneStart() {
     const { name } = this.view.sceneInfo.objects[0];
     const obj = this.view.getObject(name);

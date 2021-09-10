@@ -4,6 +4,9 @@ Page({
     this.view.skipCloudar();
   },
 
+  /**
+   * 注意：只能在loadSceneEnd及之后的事件触发后，才能通过view.getObject获取到素材对象。
+   */
   sceneStart() {
     const { name } = this.view.sceneInfo.objects[0];
     const model = this.view.getObject(name);
