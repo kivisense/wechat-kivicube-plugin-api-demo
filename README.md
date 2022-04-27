@@ -42,7 +42,7 @@
 
 ##### 8、[穿透自定义UI点击到模型](../../tree/master/pages/api/penetrateUI/)
 
-##### 9、[使用license开通图像追踪功能](../../tree/master/pages/api/image2d-tracking/)
+##### 9、[使用license去除图像追踪水印](../../tree/master/pages/api/image2d-tracking/)
 
 ### 合辑
 
