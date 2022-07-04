@@ -59,7 +59,7 @@ Page({
       );
       const defaultThumbnailUrl = ""; // 如果视频显示不出来，则显示默认的缩略图。传递为空则不显示缩略图。
       const video = await this.view.addVideo(
-        videoUrlOrPath,
+        videoUrlOrPath, // 如果想视频边下边播，在线播放。这里直接输入视频URL地址即可(不需要预先下载下来)。
         defaultThumbnailUrl,
         progress
       );
