@@ -1,3 +1,6 @@
+// 代码来自：https://github.com/tweenjs/tween.js
+// 使用文档参考：https://github.com/tweenjs/tween.js/blob/main/docs/user_guide.md
+// 这里内置的为18.6.4，可自行升级到最新版本
 import TWEEN from "./tween.umd";
 
 Page({
