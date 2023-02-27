@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/base/manage/manage",
+    "pages/base/audio/audio",
+    "pages/base/model/model",
+    "pages/base/group/group",
+    "pages/base/mask/mask",
+    "pages/base/imageSprite/imageSprite",
+    "pages/base/panorama/panorama",
+    "pages/base/panorama-video/panorama-video",
+    "pages/base/sky-box/sky-box",
+    "pages/base/video/video",
+    "pages/base/envMap/envMap"
+  ],
+  "plugins": {
+    "kivicube": {
+      "version": "dev-b95243c62de8fca9fb1dc72fe7ca8f2f",
+      "provider": "wx3bbab3920eabccb2"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

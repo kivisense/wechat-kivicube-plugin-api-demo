@@ -1,0 +1,10 @@
+<kivicube-collection
+  class="kivicube"
+  collection-id="b46rfc"
+  hideTakePhoto="{{true}}"
+  hideBackToScan="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view wx:if="{{showBack}}" class="back" bind:tap="back">返回扫描其他场景识别图</view>

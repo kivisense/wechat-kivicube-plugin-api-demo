@@ -1,0 +1,12 @@
+.operation {
+  position: absolute;
+  z-index: 1;
+  bottom: 10vw;
+  display: flex;
+  justify-content: space-around;
+}
+
+button {
+  width: 25vw;
+  height: 10vw;
+}

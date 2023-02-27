@@ -1,0 +1,13 @@
+.kivicube {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+}

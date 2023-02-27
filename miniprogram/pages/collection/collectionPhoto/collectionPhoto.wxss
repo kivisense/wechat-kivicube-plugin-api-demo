@@ -1,0 +1,12 @@
+.kivicube {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+}
+
+.take-photo {
+    position: absolute;
+    bottom: 10vh;
+    left: 50%;
+    transform: translate(-50%);
+}

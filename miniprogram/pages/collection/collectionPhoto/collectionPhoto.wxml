@@ -1,0 +1,9 @@
+<kivicube-collection
+  class="kivicube"
+  collection-id="b46rfc"
+  hideTakePhoto="{{true}}"
+  hideBackToScan="{{true}}"
+  bindready="ready"
+/>
+
+<view wx:if="{{showTakePhoto}}" class="take-photo" bind:tap="takePhoto">拍照</view>

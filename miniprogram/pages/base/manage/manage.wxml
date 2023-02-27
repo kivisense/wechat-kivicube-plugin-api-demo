@@ -1,0 +1,21 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="QR1gbCwigMD8zwA8mk8GA0PfHD0wY085"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view wx:if="{{showOperate}}" class="operate">
+  <view bind:tap="addImage">增加图片素材</view>
+  <view bind:tap="addVideo">增加视频素材</view>
+  <view bind:tap="addAlphaVideo">增加透明视频素材</view>
+  <view bind:tap="addModel">增加模型素材</view>
+  <view bind:tap="addAudio">增加音乐</view>
+  <view bind:tap="removeImage">移除图片素材</view>
+  <view bind:tap="removeVideo">移除视频场景</view>
+  <view bind:tap="removeAlphaVideo">移除透明视频素材</view>
+  <view bind:tap="removeModel">移除模型素材</view>
+  <view bind:tap="removeAudio">移除音乐</view>
+  <view bind:tap="clear">清空整个场景内容</view>
+</view>

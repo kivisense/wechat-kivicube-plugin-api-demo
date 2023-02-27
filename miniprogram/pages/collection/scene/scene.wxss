@@ -1,0 +1,15 @@
+.kivicube {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.operate {
+  position: absolute;
+  bottom: 10vh;
+  left: 0;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
