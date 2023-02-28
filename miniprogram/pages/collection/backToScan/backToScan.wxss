@@ -6,7 +6,10 @@
 
 .back {
   position: absolute;
+  z-index: 2;
   bottom: 10vh;
   left: 50%;
   transform: translate(-50%);
+  color: #fff;
+  font-weight: bold;
 }

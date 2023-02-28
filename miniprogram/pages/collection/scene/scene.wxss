@@ -6,6 +6,7 @@
 
 .operate {
   position: absolute;
+  z-index: 1;
   bottom: 10vh;
   left: 0;
   display: flex;

@@ -1,9 +1,9 @@
 <kivicube-scene
-    class="kivicube"
-    scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
-    hideTakePhoto="{{true}}"
-    bindready="ready"
-    bindsceneStart="sceneStart"
+  class="kivicube"
+  scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
 />
 
-<image bind:tap="tap" src="./photo-frame.png"></image>
+<image class="frame" bind:tap="tap" src="./photo-frame.png" mode="aspectFill"></image>

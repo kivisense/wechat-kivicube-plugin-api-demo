@@ -1,26 +1,26 @@
 .kivicube {
-    display: block;
-    width: 100vw;
-    height: 100vh;
+  display: block;
+  width: 100vw;
+  height: 100vh;
 }
 
 .tip {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .tip image {
-    width: 70vw;
-    height: auto;
-    margin: 0 auto;
-    opacity: 0.35;
+  width: 70vw;
+  height: auto;
+  margin: 0 auto;
+  opacity: 0.35;
 }
 
 .tip view {
-    margin-top: 10rpx;
-    color: white;
-    font-size: 5vw;
-    text-align: center;
+  margin-top: 10rpx;
+  color: white;
+  font-size: 5vw;
+  text-align: center;
 }

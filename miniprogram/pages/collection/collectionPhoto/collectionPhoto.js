@@ -18,7 +18,9 @@ Page({
       wx.hideLoading();
 
       wx.navigateTo({
-        url: `../photo/view/viewPhoto?photo=${encodeURIComponent(photoPath)}`,
+        url: `../../others/photo/view/viewPhoto?photo=${encodeURIComponent(
+          photoPath
+        )}`,
       });
     } catch (e) {
       wx.hideLoading();
