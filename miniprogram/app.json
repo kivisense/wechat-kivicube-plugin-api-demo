@@ -13,6 +13,7 @@
     "pages/base/sky-box/sky-box",
     "pages/base/video/video",
     "pages/base/envMap/envMap",
+    "pages/base/light/light",
 
     "pages/others/camera/camera",
     "pages/others/autoPlay/autoPlay",

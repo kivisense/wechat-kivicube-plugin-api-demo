@@ -1,0 +1,31 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="Pd6b9beoc2ZgSZVMuMajAoRdhq79rday"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view class="operate">
+  <label>
+    默认环境光强度：{{ambientIntensity}}
+    <slider min="0" max="10" step="0.1" value="{{ambientIntensity}}" bindchange="ambientChange"></slider>
+  </label>
+  <label>
+    默认左边平行光强度：{{directionalIntensityLeft}}
+    <slider min="0" max="10" step="0.1" value="{{directionalIntensityLeft}}" bindchange="directionalChange" data-type="left"></slider>
+  </label>
+  <label>
+    默认右边平行光强度：{{directionalIntensityRight}}
+    <slider min="0" max="10" step="0.1" value="{{directionalIntensityRight}}" bindchange="directionalChange" data-type="right"></slider>
+  </label>
+
+  <label>
+    新增环境光强度：{{moreAmbientIntensity}}
+    <slider min="0" max="10" step="0.1" value="{{moreAmbientIntensity}}" bindchange="moreAmbientChange"></slider>
+  </label>
+  <label>
+    新增平行光强度：{{moreDirectionalIntensity}}
+    <slider min="0" max="10" step="0.1" value="{{moreDirectionalIntensity}}" bindchange="moreDirectionalChange"></slider>
+  </label>
+</view>
