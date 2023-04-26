@@ -22,11 +22,9 @@
     "pages/others/photo/view/viewPhoto",
     "pages/others/simpleAnimation/simpleAnimation",
     "pages/others/tweenAnimation/tweenAnimation",
-
+    "pages/others/recorder/recorder",
     "pages/cloudar/skipCloudar/skipCloudar",
-
     "pages/image-tracking/image2d-tracking/image2d-tracking",
-
     "pages/collection/collection/collection",
     "pages/collection/backToScan/backToScan",
     "pages/collection/cloudar/cloudar",
@@ -35,7 +33,7 @@
   ],
   "plugins": {
     "kivicube": {
-      "version": "dev-a13c2e29d55e2f013842fe474fc283a8",
+      "version": "dev-f86634728a4873f6352dc6eabd41d604",
       "provider": "wx3bbab3920eabccb2"
     }
   },

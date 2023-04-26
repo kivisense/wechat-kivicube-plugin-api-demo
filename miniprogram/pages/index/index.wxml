@@ -30,6 +30,7 @@
   <navigator url="../others/photo/photo"> 拍照处理 自定义拍照按钮 </navigator>
   <navigator url="../others/simpleAnimation/simpleAnimation"> 简单的自定义动画 </navigator>
   <navigator url="../others/tweenAnimation/tweenAnimation"> 使用TWEEN 实现缓动动画 </navigator>
+  <navigator url="../others/recorder/recorder"> AR画面录制 </navigator>
 </view>
 
 <view class="header">云识别</view>
