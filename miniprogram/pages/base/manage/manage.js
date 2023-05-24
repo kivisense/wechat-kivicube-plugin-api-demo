@@ -125,7 +125,10 @@ Page({
       const modelAb = await requestFile(modelUrl);
       // 如果模型是gltf格式，则必须传递第二个参数。否则可为空
       const model = await this.view.createGltfModel(modelAb, progress);
-      this.view.add(model);
+
+      const useDefaultEnvMap = true; // 默认使用场景中配置的环境贴图， 如果为 false 则不使用环境贴图
+
+      this.view.add(model, useDefaultEnvMap);
 
       model.position.set(0, 0, 0);
       model.rotation.set(0, Math.PI / -4, 0);

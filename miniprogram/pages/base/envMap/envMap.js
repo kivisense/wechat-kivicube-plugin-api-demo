@@ -89,7 +89,9 @@ Page({
 
     this.hdr = await this.view.createEnvMapByHDR(this.hdrAb, progress);
 
-    this.view.add(this.model);
+    const useDefaultEnvMap = true; // 默认使用场景中配置的环境贴图， 如果为 false 则不使用环境贴图
+
+    this.view.add(this.model, useDefaultEnvMap);
     this.setData({ showOperate: true });
   },
 
