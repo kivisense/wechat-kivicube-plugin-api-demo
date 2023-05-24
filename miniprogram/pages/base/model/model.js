@@ -39,6 +39,17 @@ Page({
       });
     });
 
+    model.onBeforeRender = () => {
+      if (!this.isLookCamera) {
+        return;
+      }
+
+      const camera = this.view.defaultCamera;
+      const position = camera.position;
+
+      model.lookAt(position.x, position.y, position.z);
+    };
+
     this.model = model;
   },
 
@@ -82,5 +93,11 @@ Page({
     } else {
       console.warn(`模型(${this.model.name})没有动画`);
     }
+  },
+  openLookCamera() {
+    this.isLookCamera = true;
+  },
+  closeLookCamera() {
+    this.isLookCamera = false;
   },
 });

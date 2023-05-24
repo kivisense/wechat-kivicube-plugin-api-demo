@@ -40,7 +40,8 @@
 
 <view class="header">图像追踪</view>
 <view class="second">
-  <navigator url="../image-tracking/image2d-tracking/image2d-tracking">使用license开通图像追踪功能</navigator>
+  <navigator url="../image-tracking/image2d-tracking/image2d-tracking">使用license去除图像追踪水印</navigator>
+  <navigator url="../image-tracking/tracking-version/tracking-version">手动设置图像追踪版本</navigator>
 </view>
 
 

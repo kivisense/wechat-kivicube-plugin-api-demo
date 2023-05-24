@@ -6,6 +6,11 @@
   bindsceneStart="sceneStart"
 />
 
+<view wx:if="{{showOperate}}" class="operate operate2">
+  <button class="playback" bind:tap="openLookCamera">开启面相相机</button>
+  <button class="playback" bind:tap="closeLookCamera">取消面相相机</button>
+</view>
+
 <view wx:if="{{showOperate}}" class="operate">
   <button class="play" bind:tap="play">播放</button>
   <button class="pause" bind:tap="pause">暂停</button>

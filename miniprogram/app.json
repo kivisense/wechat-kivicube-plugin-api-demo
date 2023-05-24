@@ -14,7 +14,6 @@
     "pages/base/video/video",
     "pages/base/envMap/envMap",
     "pages/base/light/light",
-
     "pages/others/camera/camera",
     "pages/others/autoPlay/autoPlay",
     "pages/others/penetrateUI/penetrateUI",
@@ -25,6 +24,7 @@
     "pages/others/recorder/recorder",
     "pages/cloudar/skipCloudar/skipCloudar",
     "pages/image-tracking/image2d-tracking/image2d-tracking",
+    "pages/image-tracking/tracking-version/tracking-version",
     "pages/collection/collection/collection",
     "pages/collection/backToScan/backToScan",
     "pages/collection/cloudar/cloudar",
@@ -33,7 +33,7 @@
   ],
   "plugins": {
     "kivicube": {
-      "version": "dev-f86634728a4873f6352dc6eabd41d604",
+      "version": "dev-5bb6d436c61ac191620ef7796875a3dc",
       "provider": "wx3bbab3920eabccb2"
     }
   },
