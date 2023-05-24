@@ -69,3 +69,13 @@ export function downloadFile(url) {
     });
   });
 }
+
+// 弧度角度转换
+// 角度转弧度
+export function degToRad(degrees) {
+  return (degrees * Math.PI) / 180;
+}
+// 弧度转角度
+export function radToDeg(radians) {
+  return (radians * 180) / Math.PI;
+}

@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/quick-start/scene/scene",
     "pages/base/manage/manage",
     "pages/base/common/common",
     "pages/base/audio/audio",

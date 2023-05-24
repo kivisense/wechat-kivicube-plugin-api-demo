@@ -1,7 +1,7 @@
 Page({
   data: {
     id: "",
-    renderCamera: true,
+    renderCamera: true, // ! 注意，录制功能必须 设置 renderCamera 为 true
     recordDisable: false,
     autoDownload: true,
     recorderStatus: "初始状态",

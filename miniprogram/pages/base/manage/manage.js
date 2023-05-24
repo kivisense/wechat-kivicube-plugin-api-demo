@@ -1,4 +1,9 @@
-import { errorHandler, requestFile, downloadFile } from "../../../utils/helper";
+import {
+  errorHandler,
+  requestFile,
+  downloadFile,
+  degToRad,
+} from "../../../utils/helper";
 
 const progress = (p) => console.log(p);
 
@@ -130,8 +135,11 @@ Page({
 
       this.view.add(model, useDefaultEnvMap);
 
+      const rotY = degToRad(-45); // -45度 转化为弧度制
+
       model.position.set(0, 0, 0);
-      model.rotation.set(0, Math.PI / -4, 0);
+      model.rotation.set(0, rotY, 0); // 旋转设置 x, y, z 三个方向的旋转，使用的是弧度制
+      // model.rotation.set(0, Math.PI / -4, 0); // 旋转设置 x, y, z 三个方向的旋转，使用的是弧度制
       model.scale.setScalar(0.5);
 
       const [name] = model.getAnimationNames();

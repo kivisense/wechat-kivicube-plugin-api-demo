@@ -1,13 +1,13 @@
 <view class="header">快速开始</view>
 <view class="second">
-  <navigator url="../quick-start/api/api">1、如何获取高级API</navigator>
-  <navigator url="../quick-start/sample/sample">2、高级API基本应用</navigator>
-  <navigator url="../base/scene/scene">3、场景展示页面的简单模拟</navigator>
+  <navigator url="../quick-start/scene/scene">如何获取高级API</navigator>
 </view>
 
 <view class="header">基础 素材管理和使用</view>
 <view class="second">
-  <navigator url="../base/common/common"> 3D对象共有API【基类】- 包含子对象处理、点击事件、渲染钩子函数、显示隐藏等的示例</navigator>
+  <navigator url="../base/common/common">
+    3D对象共有API【基类】- 包含子对象处理、点击事件、渲染钩子函数、显示隐藏等的示例</navigator
+  >
   <navigator url="../base/model/model"> glb模型 </navigator>
   <navigator url="../base/group/group"> 组合容器 </navigator>
   <navigator url="../base/mask/mask"> 将素材指定为遮罩 </navigator>
@@ -35,24 +35,33 @@
 
 <view class="header">云识别</view>
 <view class="second">
-  <navigator url="../cloudar/skipCloudar/skipCloudar"> 云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】</navigator>
+  <navigator url="../cloudar/skipCloudar/skipCloudar">
+    云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】</navigator
+  >
 </view>
 
 <view class="header">图像追踪</view>
 <view class="second">
-  <navigator url="../image-tracking/image2d-tracking/image2d-tracking">使用license去除图像追踪水印</navigator>
-  <navigator url="../image-tracking/tracking-version/tracking-version">手动设置图像追踪版本</navigator>
+  <navigator url="../image-tracking/image2d-tracking/image2d-tracking"
+    >使用license去除图像追踪水印</navigator
+  >
+  <navigator url="../image-tracking/tracking-version/tracking-version"
+    >手动设置图像追踪版本</navigator
+  >
 </view>
-
 
 <view class="header">合辑</view>
 
-<navigator class="title" url="../collection/collection/collection">基础【如何获取高级API】</navigator>
+<navigator class="title" url="../collection/collection/collection"
+  >基础【如何获取高级API】</navigator
+>
 
 <view class="title">合辑【如何使用高级API】</view>
 <view class="second">
-  <navigator url="../collection/backToScan/backToScan"> 1、云识别类型合辑 - 自定义返回扫描功能 </navigator>
-  <navigator url="../collection/cloudar/cloudar"> 2、云识别开启与关闭 </navigator>
-  <navigator url="../collection/scene/scene"> 3、场景的打开与关闭 </navigator>
-  <navigator url="../collection/collectionPhoto/collectionPhoto"> 4、拍照 </navigator>
+  <navigator url="../collection/backToScan/backToScan">
+    云识别类型合辑 - 自定义返回扫描功能
+  </navigator>
+  <navigator url="../collection/cloudar/cloudar"> 云识别开启与关闭 </navigator>
+  <navigator url="../collection/scene/scene"> 场景的打开与关闭 </navigator>
+  <navigator url="../collection/collectionPhoto/collectionPhoto"> 拍照 </navigator>
 </view>
