@@ -18,7 +18,7 @@
   <navigator url="../base/panorama-video/panorama-video"> 全景视频 </navigator>
   <navigator url="../base/sky-box/sky-box"> 天空盒子 </navigator>
   <navigator url="../base/light/light"> 灯光 </navigator>
-  <navigator url="../base/envMap/envMap"> 自定义环境贴图 </navigator>
+  <navigator url="../base/env-map/env-map"> 自定义环境贴图 </navigator>
   <navigator url="../base/manage/manage"> 素材管理 包含自定义增删改素材 </navigator>
 </view>
 
