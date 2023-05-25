@@ -133,13 +133,19 @@
 | createEnvMapByPanorama | Function | 创建一个基于全景图的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |
 | createEnvMapByHDR | Function | 创建一个基于HDR文件的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |
 | createEnvMapByImage | Function | 创建一个基于图片的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |
+| createAmbientLight | Function | 创建一个环境光3D对象 | [pages/base/light/](../../tree/master/pages/base/light/) |
+| createDirectionalLight | Function | 创建一个平行光3D对象 | [pages/base/light/](../../tree/master/pages/base/light/) |
 | defaultAmbientLight | Object | 获取默认的环境光3D对象 | [pages/base/light/](./miniprogram/pages/base/light/) |
-| defaultDirectionalLight | Object | 获取默认的平行光3D对象 | [pages/base/light/](./miniprogram/pages/base/light/) |
+| defaultDirectionalLightLeft | Object | 获取默认的左平行光3D对象 | [pages/base/light/](./miniprogram/pages/base/light/) |
+| defaultDirectionalLightRight | Object | 获取默认的右平行光3D对象 | [pages/base/light/](./miniprogram/pages/base/light/) |
+| clone | Function | 克隆一个3d对象。 | [待新增](./miniprogram/pages/) |
 | add | Function | 将上述创建好的3D对象，增加进组件之中去呈现。 | [pages/base/sample/](./miniprogram/pages/base/sample/) |
 | remove | Function | 移除场景中的某个素材内容 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
 | destroyObject | Function | 销毁创建的某个3D对象。(回收内存) | [pages/base/sample/](./miniprogram/pages/base/manage/) |
 | clear | Function | 清空场景中所有的素材内容 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
-| createRecorder | Function | 创建AR内容录制器, 插件版本`>=1.4.0` | [pages/others/record/](./miniprogram/pages/others/recorder/) |
+| isTracking1 | Boolean | 是否是图像追踪版本1 | [待新增](./miniprogram/pages/) |
+| isTracking2 | Boolean | 是否是图像追踪版本2 | [待新增](./miniprogram/pages/) |
+| createRecorder | Function | 创建AR内容录制器, 插件版本 | [pages/others/record/](./miniprogram/pages/others/recorder/) |
 
 ## 常见问题【重要，需仔细阅读】
 
