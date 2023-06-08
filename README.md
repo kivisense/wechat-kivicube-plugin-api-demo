@@ -1,4 +1,8 @@
-# Kivicube插件高级API使用说明文档
+# Kivicube插件高级API使用说明文档V2
+
+此文档针对 kivicube插件 2.0 版本，1.x 版本文档请见[链接]();
+
+kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 ## 源码目录
 
@@ -6,75 +10,75 @@
 
 ### 场景
 
-#### 快速开始
+#### 一、快速开始
 
-##### [如何获取高级API](./miniprogram/pages/quick-start/scene/)
+##### 1.[如何获取高级API](./miniprogram/pages/quick-start/scene/)
 
-#### 基础 素材管理和使用
+#### 二、基础 素材管理和使用
 
-##### [3D对象共有API【基类】- 包含子对象处理、点击事件、渲染钩子函数、显示隐藏等的示例](./miniprogram/pages/base/common/)
+##### 1.[3D对象共有API【基类】- 包含子对象处理、点击事件、渲染钩子函数、显示隐藏等的示例](./miniprogram/pages/base/common/)
 
-##### [glb模型](./miniprogram/pages/base/model/)
+##### 2.[glb模型](./miniprogram/pages/base/model/)
 
-##### [组合容器](./miniprogram/pages/base/group/)
+##### 3.[组合容器](./miniprogram/pages/base/group/)
 
-##### [将素材指定为遮罩](./miniprogram/pages/base/mask/)
+##### 4.[将素材指定为遮罩](./miniprogram/pages/base/mask/)
 
-##### [精灵图](./miniprogram/pages/base/imageSprite/)
+##### 5.[精灵图](./miniprogram/pages/base/imageSprite/)
 
-##### [音频](./miniprogram/pages/base/audio/)
+##### 6.[音频](./miniprogram/pages/base/audio/)
 
-##### [视频/透明视频](./miniprogram/pages/base/video/)
+##### 7.[视频/透明视频](./miniprogram/pages/base/video/)
 
-##### [全景图](./miniprogram/pages/base/panorama/)
+##### 8.[全景图](./miniprogram/pages/base/panorama/)
 
-##### [全景视频](./miniprogram/pages/base/panorama-video/panorama-)
+##### 9.[全景视频](./miniprogram/pages/base/panorama-video/)
 
-##### [天空盒子](./miniprogram/pages/base/sky-box/sky-)
+##### 10.[天空盒子](./miniprogram/pages/base/sky-box/)
 
-##### [灯光](./miniprogram/pages/base/light/)
+##### 11.[灯光](./miniprogram/pages/base/light/)
 
-##### [自定义环境贴图](./miniprogram/pages/base/envMap/)
+##### 12.[自定义环境贴图](./miniprogram/pages/base/envMap/)
 
-##### [素材管理 包含自定义增删改素材](./miniprogram/pages/base/manage/)
+##### 13.[素材管理 包含自定义增删改素材](./miniprogram/pages/base/manage/)
 
-#### 其他
+#### 三、其他
 
-##### [动态切换前后摄像头](./miniprogram/pages/others/camera/)
+##### 1.[动态切换前后摄像头](./miniprogram/pages/others/camera/)
 
-##### [自动播放](./miniprogram/pages/others/autoPlay/)
+##### 2.[自动播放](./miniprogram/pages/others/autoPlay/)
 
-##### [自定义UI 穿透自定义UI点击到模型](./miniprogram/pages/others/penetrateUI/)
+##### 3.[自定义UI 穿透自定义UI点击到模型](./miniprogram/pages/others/penetrateUI/)
 
-##### [拍照处理 自定义拍照按钮](./miniprogram/pages/others/photo/)
+##### 4.[拍照处理 自定义拍照按钮](./miniprogram/pages/others/photo/)
 
-##### [简单的自定义动画](./miniprogram/pages/others/simpleAnimation/)
+##### 5.[简单的自定义动画](./miniprogram/pages/others/simpleAnimation/)
 
-##### [使用TWEEN 实现缓动动画](./miniprogram/pages/others/tweenAnimation/)
+##### 6.[使用TWEEN 实现缓动动画](./miniprogram/pages/others/tweenAnimation/)
 
-##### [AR画面录制](./miniprogram/pages/others/recorder/)
+##### 7.[AR画面录制](./miniprogram/pages/others/recorder/)
 
-#### 云识别
+#### 四、云识别
 
-##### [云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】](./miniprogram/pages/cloudar/skipCloudar/)
+##### 1.[云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】](./miniprogram/pages/cloudar/skipCloudar/)
 
-#### 图像追踪
+#### 五、图像追踪
 
-##### [使用license去除图像追踪水印](./miniprogram/pages/image-tracking/image2d-tracking/image2d-)
+##### 1.[使用license去除图像追踪水印](./miniprogram/pages/image-tracking/image2d-tracking/)
 
-##### [手动设置图像追踪版本](./miniprogram/pages/image-tracking/tracking-version/tracking-)
+##### 2.[手动设置图像追踪版本](./miniprogram/pages/image-tracking/tracking-version/)
 
-#### 合辑
+#### 六、合辑
 
-##### [基础【如何获取高级API】](./miniprogram/pages/collection/collection/)
+##### 1.[基础【如何获取高级API】](./miniprogram/pages/collection/collection/)
 
-##### [云识别类型合辑 - 自定义返回扫描功能](./miniprogram/pages/collection/backToScan/)
+##### 2.[云识别类型合辑 - 自定义返回扫描功能](./miniprogram/pages/collection/backToScan/)
 
-##### [云识别开启与关闭](./miniprogram/pages/collection/cloudar/)
+##### 3.[云识别开启与关闭](./miniprogram/pages/collection/cloudar/)
 
-##### [场景的打开与关闭](./miniprogram/pages/collection/scene/)
+##### 4.[场景的打开与关闭](./miniprogram/pages/collection/scene/)
 
-##### [拍照](./miniprogram/pages/collection/collectionPhoto/)
+##### 5.[拍照](./miniprogram/pages/collection/collectionPhoto/)
 
 ## 高级API对象
 
