@@ -7,7 +7,6 @@ import {
 
 Page({
   data: {
-    // license: getApp().globalData.license,
     operation: false,
   },
 

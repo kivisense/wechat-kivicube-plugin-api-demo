@@ -8,7 +8,7 @@
 - 新增了更加稳定的图像追踪 tracking2 版本
 - 支持更多的 3d 类型和 api 方法
 - 新增AR画面录制
-- 修改了 license 的使用方式
+- 修改了 license 的使用方式, 使用新版插件的开发者可以重新申请 license 使用
 - 移除了 `kivi-cloudar` 组件，如果需要使用，请使用新版[弥知AI识别插件](https://mp.weixin.qq.com/wxopen/plugindevdoc?appid=wxf51acd2cc2b1c978)
 
 ## api 的修改
@@ -45,5 +45,20 @@ view 对象提供了新的 api 以供开发者更加方便和自由的对场景�
 `defaultAmbientLight`: 获取默认环境光
 `createRecorder`: 创建3d场景录制器
 `setToneMapping`: 设置色调映射
+
+## 移除的方法
+
+#### 插件导出的 `setPackageRootPath` ,之前用于分包的设置，使用形式如下
+
+```javascript
+const { setPackageRootPath } = requirePlugin("kivicube");
+```
+**注意：在此版本已经移除，不需要单独再设置**
+
+#### 插件导出的 `setOptions`, 之前用于 license 的设置，使用形式如下：
+```
+const { setOptions } = requirePlugin("kivicube");
+```
+**注意： 在此版本已经移除，设置 license 方式，见 README 文档中说明**
 
 更多内容敬请期待中...

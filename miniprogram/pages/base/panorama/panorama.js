@@ -5,9 +5,7 @@ import {
 } from "../../../utils/helper";
 
 Page({
-  data: {
-    // license: getApp().globalData.license,
-  },
+  data: {},
 
   onLoad() {
     wx.showLoading({ title: "初始化中..." });
