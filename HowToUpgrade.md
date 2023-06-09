@@ -32,19 +32,19 @@ v1 版本的插件中，通过 view 对象创建的 3d 对象会直接加入到�
 
 ## 新增的 api
 
-view 对象提供了新的 api 以供开发者更加方便和自由的对场景的元素进行操作
-`createGroup`: 创建一个组，可以将多个 3d 对象加入其中，进行统一的操作，例如 位移，旋转，缩放
-`add`: 将创建的 3d 对象加入到场景中
-`clone`: 克隆一个3d对象【目前只支持模型对象】
-`createSkyBox`: 创建天空盒对象
-`createPanoramaVideo`: 创建全景视频
-`createDirectionalLight`: 创建平行光
-`createAmbientLight`: 创建环境光
-`defaultDirectionalLightLeft`: 获取默认的左平行光
-`defaultDirectionalLightRight`: 获取默认的右平行光
-`defaultAmbientLight`: 获取默认环境光
-`createRecorder`: 创建AR画面录制器
-`setToneMapping`: 设置色调映射
+view 对象提供了新的 api 以供开发者更加方便和自由的对场景的元素进行操作  
+`createGroup`: 创建一个组，可以将多个 3d 对象加入其中，进行统一的操作，例如 位移，旋转，缩放  
+`add`: 将创建的 3d 对象加入到场景中  
+`clone`: 克隆一个3d对象【目前只支持模型对象】  
+`createSkyBox`: 创建天空盒对象  
+`createPanoramaVideo`: 创建全景视频  
+`createDirectionalLight`: 创建平行光  
+`createAmbientLight`: 创建环境光  
+`defaultDirectionalLightLeft`: 获取默认的左平行光  
+`defaultDirectionalLightRight`: 获取默认的右平行光  
+`defaultAmbientLight`: 获取默认环境光  
+`createRecorder`: 创建AR画面录制器  
+`setToneMapping`: 设置色调映射  
 
 ## 移除的方法
 
