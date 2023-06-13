@@ -1,0 +1,14 @@
+.kivicube {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.switch {
+  position: absolute;
+  z-index: 1;
+  bottom: 10vw;
+  left: 50%;
+  width: auto;
+  transform: translate(-50%);
+}

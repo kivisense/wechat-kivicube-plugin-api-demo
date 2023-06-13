@@ -1,62 +1,84 @@
-# Kivicube插件高级API使用说明文档
+# Kivicube插件高级API使用说明文档V2
+
+此文档针对 kivicube插件 2.0 版本，1.x 版本文档请见[链接](https://github.com/kivisense/wechat-kivicube-plugin-api-demo/tree/v1);
+
+kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 ## 源码目录
 
+**声明：所有的示例代码仅供大家开发参考，若移植到自己的项目后有任何问题，请先自行检查和确认问题来源。确实为组件问题的，请创建Issues反馈。**
+
 ### 场景
 
-#### 一、[基础【如何获取高级API】](../../tree/master/pages/base/scene/)
+#### 一、快速开始
 
-#### 二、素材对象【如何使用高级API】
+##### 1.[如何获取高级API](./miniprogram/pages/quick-start/scene/)
 
-##### 1、[素材对象共有API【修改素材位置/大小/旋转、隐藏/显示、监听点击事件】](../../tree/master/pages/api/common/)
+#### 二、基础 素材管理和使用
 
-##### 2、[视频/透明视频独有API【控制视频播放，监听相关事件】](../../tree/master/pages/api/video/)
+##### 1.[3D对象共有API【基类】- 包含子对象处理、点击事件、渲染钩子函数、显示隐藏等的示例](./miniprogram/pages/base/common/)
 
-##### 3、[模型独有API【控制动画播放，监听相关事件】](../../tree/master/pages/api/model/)
+##### 2.[glb模型](./miniprogram/pages/base/model/)
 
-##### 4、[音乐独有API【控制音乐播放，监听相关事件】](../../tree/master/pages/api/audio/)
+##### 3.[组合容器](./miniprogram/pages/base/group/)
 
-##### 5、[将3d素材指定为遮罩](../../tree/master/pages/api/mask/)
+##### 4.[将素材指定为遮罩](./miniprogram/pages/base/mask/)
 
-#### 三、特殊素材(与编辑器后台无关)【如何使用高级API】
+##### 5.[精灵图](./miniprogram/pages/base/imageSprite/)
 
-##### 1、[自定义环境贴图](../../tree/master/pages/api/envMap/)
+##### 6.[音频](./miniprogram/pages/base/audio/)
 
-##### 2、[精灵图序列](../../tree/master/pages/api/imageSprite/)
+##### 7.[视频/透明视频](./miniprogram/pages/base/video/)
 
-#### 四、场景【如何使用高级API】
+##### 8.[全景图](./miniprogram/pages/base/panorama/)
 
-##### 1、[云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】](../../tree/master/pages/api/skipCloudar/)
+##### 9.[全景视频](./miniprogram/pages/base/panorama-video/)
 
-##### 2、[自动开始播放音乐、视频和模型动画【不依赖后台配置】](../../tree/master/pages/api/autoPlay/)
+##### 10.[天空盒子](./miniprogram/pages/base/sky-box/)
 
-##### 3、[动态增删改场景素材](../../tree/master/pages/api/manage/)【**如何使用外部素材**】
+##### 11.[灯光](./miniprogram/pages/base/light/)
 
-##### 4、[简单的自定义动画](../../tree/master/pages/api/simpleAnimation/)
+##### 12.[自定义环境贴图](./miniprogram/pages/base/envMap/)
 
-##### 5、[实现缓动动画](../../tree/master/pages/api/tweenAnimation/)
+##### 13.[素材管理 包含自定义增删改素材](./miniprogram/pages/base/manage/)
 
-##### 6、[拍照处理](../../tree/master/pages/api/photo/)
+#### 三、其他
 
-##### 7、[动态切换前后摄像头](../../tree/master/pages/api/camera/)
+##### 1.[动态切换前后摄像头](./miniprogram/pages/others/camera/)
 
-##### 8、[穿透自定义UI点击到模型](../../tree/master/pages/api/penetrateUI/)
+##### 2.[自动播放](./miniprogram/pages/others/autoPlay/)
 
-##### 9、[使用license去除图像追踪水印](../../tree/master/pages/api/image2d-tracking/)
+##### 3.[自定义UI 穿透自定义UI点击到模型](./miniprogram/pages/others/penetrateUI/)
 
-### 合辑
+##### 4.[拍照处理 自定义拍照按钮](./miniprogram/pages/others/photo/)
 
-#### 一、[基础【如何获取高级API】](../../tree/master/pages/base/collection/)
+##### 5.[简单的自定义动画](./miniprogram/pages/others/simpleAnimation/)
 
-#### 二、合辑【如何使用高级API】
+##### 6.[使用TWEEN 实现缓动动画](./miniprogram/pages/others/tweenAnimation/)
 
-##### 1、[云识别类型合辑 - 自定义返回扫描功能](../../tree/master/pages/api/backToScan/)
+##### 7.[AR画面录制](./miniprogram/pages/others/recorder/)
 
-##### 2、[云识别开启与关闭](../../tree/master/pages/api/cloudar/)
+#### 四、云识别
 
-##### 3、[场景的打开与关闭](../../tree/master/pages/api/scene/)
+##### 1.[云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】](./miniprogram/pages/cloudar/skipCloudar/)
 
-##### 4、[拍照处理](../../tree/master/pages/api/collectionPhoto/)
+#### 五、图像追踪
+
+##### 1.[使用license去除图像追踪水印](./miniprogram/pages/image-tracking/image2d-tracking/)
+
+##### 2.[手动设置图像追踪版本](./miniprogram/pages/image-tracking/tracking-version/)
+
+#### 六、合辑
+
+##### 1.[基础【如何获取高级API】](./miniprogram/pages/collection/collection/)
+
+##### 2.[云识别类型合辑 - 自定义返回扫描功能](./miniprogram/pages/collection/backToScan/)
+
+##### 3.[云识别开启与关闭](./miniprogram/pages/collection/cloudar/)
+
+##### 4.[场景的打开与关闭](./miniprogram/pages/collection/scene/)
+
+##### 5.[拍照](./miniprogram/pages/collection/collectionPhoto/)
 
 ## 高级API对象
 
@@ -68,7 +90,7 @@
 
 **重要：kivicube-collection组件还会通过特有的sceneReady事件，传递出和kivicube-scene组件一样的view对象。**
 
-当合辑打开新场景，关闭旧场景时，仍会通过sceneReady事件传递出新场景的view对象。每个新打开的场景都拥有新的view对象，且和旧场景的view对象是不一样的实例(console.log(oldView === newView); // 输出false)。
+当合辑打开新场景，关闭旧场景时，仍会通过sceneReady事件传递出新场景的view对象。每个新打开的场景都拥有新的view对象，且和旧场景的view对象是不一样的实例`(console.log(oldView === newView); // 输出false)`。
 
 如果合辑中，对同一个场景打开了两次，那获取到的view对象也是不一致的。
 
@@ -80,13 +102,13 @@
 
 | 字段 | 类型 | 说明 | 示例代码(了解API的传参和返回值定义) |
 | ---- | ------- | --- | ------- |
-| collectionInfo | Object | 合辑的基本信息，该对象详细的字段定义见示例代码。 | [pages/base/collection/](../../tree/master/pages/base/collection/) |
-| backToScan | Function | 调用后，会关闭当前打开的场景，和开启扫描功能，可去扫描合辑下的所有场景识别图。【只有“云识别”类型的合辑支持】 | [pages/api/backToScan/](../../tree/master/pages/api/backToScan/) |
-| startCloudar | Function | 开启云识别扫描功能。可扫描当前合辑下的所有场景识别图 | [pages/api/cloudar/](../../tree/master/pages/api/cloudar/) |
-| stopCloudar | Function | 停止云识别扫描功能 | [pages/api/cloudar/](../../tree/master/pages/api/cloudar/) |
-| openScene | Function | 打开指定的场景。【注意：有场景正在打开过程中(sceneStart事件触发之前)，则调用无效】 | [pages/api/scene/](../../tree/master/pages/api/scene/) |
-| closeCurrentScene | Function | 关闭当前已打开的场景 | [pages/api/scene/](../../tree/master/pages/api/scene/) |
-| takePhoto | Function | 拍照 | [pages/api/collectionPhoto/](../../tree/master/pages/api/collectionPhoto/) |
+| collectionInfo | Object | 合辑的基本信息，该对象详细的字段定义见示例代码。 | [pages/collection/collection/](./miniprogram/pages/collection/collection/) |
+| backToScan | Function | 调用后，会关闭当前打开的场景，和开启扫描功能，可去扫描合辑下的所有场景识别图。【只有“云识别”类型的合辑支持】 | [pages/collection/backToScan/](./miniprogram/pages/collection/backToScan/) |
+| startCloudar | Function | 开启云识别扫描功能。可扫描当前合辑下的所有场景识别图 | [pages/collection/cloudar/](./miniprogram/pages/collection/cloudar/) |
+| stopCloudar | Function | 停止云识别扫描功能 | [pages/collection/cloudar/](./miniprogram/pages/collection/cloudar/) |
+| openScene | Function | 打开指定的场景。【注意：有场景正在打开过程中(sceneStart事件触发之前)，则调用无效】 | [pages/collection/scene/](./miniprogram/pages/collection/scene/) |
+| closeCurrentScene | Function | 关闭当前已打开的场景 | [pages/collection/scene/](./miniprogram/pages/collection/scene/) |
+| takePhoto | Function | 拍照 | [pages/collection/collectionPhoto/](./miniprogram/pages/collection/collectionPhoto/) |
 
 ### view
 
@@ -94,24 +116,40 @@
 
 | 字段 | 类型 | 说明 | 示例代码(了解API的传参和返回值定义) |
 | ---- | ------- | --- | ------- |
-| sceneInfo | Object | 场景的基本信息，该对象详细的字段定义见示例代码。 | [pages/base/scene/](../../tree/master/pages/base/scene/) |
-| skipCloudar | Function | 跳过场景的扫描阶段，直接呈现场景内容。 | [pages/api/skipCloudar/](../../tree/master/pages/api/skipCloudar/) |
-| getObject | Function | 获取素材内容对象。**【注意： 只能在loadSceneEnd及之后的事件触发后，才能获取到素材对象。ready事件中无法获取到素材对象。】** | [pages/base/scene/](../../tree/master/pages/base/scene/) |
-| getAllObject | Function | 获取场景中所有的素材内容对象 | [pages/base/scene/](../../tree/master/pages/base/scene/) |
-| dispatchTouchEvent | Function | 手动触发一个touch点击事件 | [pages/api/penetrateUI/](../../tree/master/pages/api/penetrateUI/) |
-| switchCamera | Function | 切换前后摄像头 | [pages/api/camera/](../../tree/master/pages/api/camera/) |
-| takePhoto | Function | 拍照 | [pages/api/photo/](../../tree/master/pages/api/photo/) |
-| generateEnvMapByCubeMap | Function | 生成一个6张图组成天空盒的环境贴图对象 | [pages/api/envMap/](../../tree/master/pages/api/envMap/) |
-| generateEnvMapByPanorama | Function | 生成一个全景图的环境贴图对象 | [pages/api/envMap/](../../tree/master/pages/api/envMap/) |
-| addModel | Function | 动态增加一个模型素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| addImage | Function | 动态增加一个图片素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| addVideo | Function | 动态增加一个视频素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| addAlphaVideo | Function | 动态增加一个透明视频素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| addAudio | Function | 动态增加一个音频素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| addImageSprite | Function | 动态增加一个精灵图(动图)素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| addBackgroundPanorama | Function | 动态增加一个全景图背景素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| remove | Function | 移除场景中的某个素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
-| clear | Function | 清空场景中所有的素材内容 | [pages/api/manage/](../../tree/master/pages/api/manage/) |
+| sceneInfo | Object | 场景的基本信息，该对象详细的字段定义见示例代码。 | [pages/quick-start/scene/](./miniprogram/pages/quick-start/scene/) |
+| skipCloudar | Function | 跳过场景的扫描阶段，直接呈现场景内容。 | [pages/cloudar/skipCloudar/](./miniprogram/pages/cloudar/skipCloudar/) |
+| getObject | Function | 获取素材内容对象。**【注意： 只能在loadSceneEnd及之后的事件触发后，才能获取到素材对象。ready事件中无法获取到素材对象。】** | [pages/quick-start/scene/](./miniprogram/pages/quick-start/scene/) |
+| getAllObject | Function | 获取场景中所有的素材内容对象 | [pages/quick-start/scene/](./miniprogram/pages/quick-start/scene/) |
+| dispatchTouchEvent | Function | 手动触发一个touch点击事件 | [pages/others/penetrateUI/](./miniprogram/pages/others/penetrateUI/) |
+| switchCamera | Function | 切换前后摄像头 | [pages/others/camera/](./miniprogram/pages/others/camera/) |
+| takePhoto | Function | 拍照 | [pages/others/photo/](./miniprogram/pages/others/photo/) |
+| createGltfModel | Function | 创建一个模型素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| createImage | Function | 创建一个图片素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| createVideo | Function | 创建一个视频素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| createAlphaVideo | Function | 创建一个透明视频素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| createPanorama | Function | 创建一个全景图对象 | [pages/base/panorama/](./miniprogram/pages/base/panorama/) |
+| createPanoramaVideo | Function | 创建一个全景视频素材对象 | [pages/base/panorama-video/](./miniprogram/pages/base/panorama-video/) |
+| createAudio | Function | 创建一个音频素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| createImageSprite | Function | 创建一个精灵图（动图）素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| createGroup | Function | 创建一个组合3D对象。可用来装载其他3D对象(包括组合) | [pages/base/group/](./miniprogram/pages/base/group/) |
+| createSkyBox | Function | 创建一个天空盒对象 | [pages/base/sky-box/](./miniprogram/pages/base/sky-box/) |
+| createEnvMapByCubeMap | Function | 创建一个基于6张图组成天空盒的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |
+| createEnvMapByPanorama | Function | 创建一个基于全景图的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |
+| createEnvMapByHDR | Function | 创建一个基于HDR文件的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |
+| createEnvMapByImage | Function | 创建一个基于图片的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |
+| createAmbientLight | Function | 创建一个环境光3D对象 | [pages/base/light/](../../tree/master/pages/base/light/) |
+| createDirectionalLight | Function | 创建一个平行光3D对象 | [pages/base/light/](../../tree/master/pages/base/light/) |
+| defaultAmbientLight | Object | 获取默认的环境光3D对象 | [pages/base/light/](./miniprogram/pages/base/light/) |
+| defaultDirectionalLightLeft | Object | 获取默认的左平行光3D对象 | [pages/base/light/](./miniprogram/pages/base/light/) |
+| defaultDirectionalLightRight | Object | 获取默认的右平行光3D对象 | [pages/base/light/](./miniprogram/pages/base/light/) |
+| clone | Function | 克隆一个3d对象。 | [待新增](./miniprogram/pages/) |
+| add | Function | 将上述创建好的3D对象，增加进组件之中去呈现。 | [pages/base/sample/](./miniprogram/pages/base/sample/) |
+| remove | Function | 移除场景中的某个素材内容 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| destroyObject | Function | 销毁创建的某个3D对象。(回收内存) | [pages/base/sample/](./miniprogram/pages/base/manage/) |
+| clear | Function | 清空场景中所有的素材内容 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| isTracking1 | Boolean | 是否是图像追踪版本1 | [待新增](./miniprogram/pages/) |
+| isTracking2 | Boolean | 是否是图像追踪版本2 | [待新增](./miniprogram/pages/) |
+| createRecorder | Function | 创建AR内容录制器, 插件版本 | [pages/others/record/](./miniprogram/pages/others/recorder/) |
 
 ## 常见问题【重要，需仔细阅读】
 

@@ -1,0 +1,14 @@
+<kivicube-collection
+  class="kivicube"
+  collection-id="b46rfc"
+  hideTakePhoto="{{true}}"
+  hideBackToScan="{{true}}"
+  bindready="ready"
+  bindcloudarStart="cloudarStart"
+/>
+
+<view class="operate">
+  <view bind:tap="openScene1">打开场景1</view>
+  <view bind:tap="openScene2">打开场景2</view>
+  <view bind:tap="closeCurrentScene">关闭当前场景</view>
+</view>

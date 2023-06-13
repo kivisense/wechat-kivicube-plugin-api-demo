@@ -1,0 +1,14 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="Pd6b9beoc2ZgSZVMuMajAoRdhq79rday"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view wx:if="{{showOperate}}" class="operate">
+  <view bind:tap="useCubeMap">使用cube类型环境贴图</view>
+  <view bind:tap="usePanorama">使用panorama类型环境贴图</view>
+  <view bind:tap="useHDR">使用HDR类型环境贴图</view>
+  <view bind:tap="remove">移除环境贴图</view>
+</view>

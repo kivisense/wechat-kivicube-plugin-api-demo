@@ -1,0 +1,12 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view class="operation" wx:if="{{showOperate}}">
+  <button bind:tap="play">播放精灵序列图</button>
+  <button bind:tap="pause">暂停精灵序列图</button>
+</view>

@@ -1,0 +1,42 @@
+{
+  "name": "wechat-kivicube-plugin-api-demo",
+  "version": "1.0.0",
+  "description": "",
+  "private": true,
+  "scripts": {
+    "prepare": "husky install",
+    "lint:fix": "eslint . --fix",
+    "style": "stylelint \"miniprogram/**/*.{scss,wxss}\" --cache --cache-location node_modules/.cache/stylelint/",
+    "style:fix": "stylelint --fix \"miniprogram/**/*.{scss,wxss}\" --cache --cache-location node_modules/.cache/stylelint/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "",
+  "dependencies": {},
+  "devDependencies": {
+    "@commitlint/cli": "^17.0.3",
+    "@commitlint/config-conventional": "^17.0.3",
+    "@babel/core": "^7.14.0",
+    "@babel/eslint-parser": "^7.13.14",
+    "eslint": "^7.26.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^9.5.0",
+    "miniprogram-api-typings": "*",
+    "postcss": "^8.4.14",
+    "postcss-scss": "^4.0.4",
+    "prettier": "^2.2.1",
+    "stylelint": "^14.8.5",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-prettier": "^9.0.3",
+    "stylelint-config-recommended-scss": "^6.0.0",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0"
+  },
+  "lint-staged": {
+    "*.{scss,wxss}": "stylelint --cache --cache-location node_modules/.cache/stylelint/",
+    "*.js": "eslint"
+  }
+}

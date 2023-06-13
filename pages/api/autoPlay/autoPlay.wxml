@@ -1,6 +1,0 @@
-<kivicube-scene
-    class="kivicube"
-    scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
-    bindready="ready"
-    bindsceneStart="sceneStart"
-/>

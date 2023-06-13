@@ -1,0 +1,12 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="Pd6b9beoc2ZgSZVMuMajAoRdhq79rday"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view class="operation" wx:if="{{operation}}">
+  <button bind:tap="move1">移动位置1</button>
+  <button bind:tap="move2">移动位置2</button>
+</view>

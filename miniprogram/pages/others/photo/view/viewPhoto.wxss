@@ -1,0 +1,11 @@
+image {
+  width: 100%;
+  height: auto;
+}
+
+.save {
+  position: absolute;
+  bottom: 20vw;
+  left: 50%;
+  transform: translate(-50%);
+}

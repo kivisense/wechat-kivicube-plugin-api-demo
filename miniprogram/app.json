@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/quick-start/scene/scene",
+    "pages/base/manage/manage",
+    "pages/base/common/common",
+    "pages/base/audio/audio",
+    "pages/base/model/model",
+    "pages/base/group/group",
+    "pages/base/mask/mask",
+    "pages/base/imageSprite/imageSprite",
+    "pages/base/panorama/panorama",
+    "pages/base/panorama-video/panorama-video",
+    "pages/base/sky-box/sky-box",
+    "pages/base/video/video",
+    "pages/base/env-map/env-map",
+    "pages/base/light/light",
+    "pages/others/camera/camera",
+    "pages/others/autoPlay/autoPlay",
+    "pages/others/penetrateUI/penetrateUI",
+    "pages/others/photo/photo",
+    "pages/others/photo/view/viewPhoto",
+    "pages/others/simpleAnimation/simpleAnimation",
+    "pages/others/tweenAnimation/tweenAnimation",
+    "pages/others/recorder/recorder",
+    "pages/cloudar/skipCloudar/skipCloudar",
+    "pages/image-tracking/image2d-tracking/image2d-tracking",
+    "pages/image-tracking/tracking-version/tracking-version",
+    "pages/collection/collection/collection",
+    "pages/collection/backToScan/backToScan",
+    "pages/collection/cloudar/cloudar",
+    "pages/collection/collectionPhoto/collectionPhoto",
+    "pages/collection/scene/scene"
+  ],
+  "plugins": {
+    "kivicube": {
+      "version": "dev-5bb6d436c61ac191620ef7796875a3dc",
+      "provider": "wx3bbab3920eabccb2"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,19 @@
+<kivicube-scene
+  class="kivicube"
+  resolution="high"
+  renderCamera="{{renderCamera}}"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  binderror="error"
+  bindsceneStart="sceneStart"
+  scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
+/>
+
+
+<view class="btn-group">
+  <view class="time">
+    {{ recorderStatus }} | {{ leftTime }}s
+  </view>
+  <button bindtap="startRecord" disabled="{{recordDisable}}">开始录制</button>
+  <button bindtap="stopRecord">结束录制</button>
+</view>

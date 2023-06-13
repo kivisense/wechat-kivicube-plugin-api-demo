@@ -1,0 +1,12 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="wk7rc8S2UWGoxp9PbFifPwSqdsZl74C1"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view wx:if="{{showOperate}}" class="operate">
+  <button bind:tap="enableMask">模型设置为遮罩</button>
+  <button bind:tap="disableMask">模型取消遮罩</button>=
+</view>

@@ -1,0 +1,15 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="tFAmcV9kKHT8s42DjfPbEaafLjLAC2IB"
+  hide-scan="{{true}}"
+  bindready="ready"
+  bindtracked="tracked"
+  bindlostTrack="lostTrack"
+  license="{{license}}"
+  version="{{version}}"
+/>
+
+<view hidden="{{!showTip}}" class="tip">
+  <image src="../image2d-tracking/marker.jpg"></image>
+  <view>请对准识别图</view>
+</view>

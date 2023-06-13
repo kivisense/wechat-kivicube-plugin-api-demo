@@ -1,0 +1,10 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="XOTxEGb44JTJnh7pcTQC3HB0qsC2ggEi"
+  cameraPosition="{{defaultPosition}}"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view wx:if="{{showOperate}}" class="switch" bind:tap="switch">切换前后摄像头</view>
