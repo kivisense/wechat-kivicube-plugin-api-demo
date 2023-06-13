@@ -1,6 +1,6 @@
 # Kivicube插件高级API使用说明文档V2
 
-此文档针对 kivicube插件 2.0 版本，1.x 版本文档请见[链接]();
+此文档针对 kivicube插件 2.0 版本，1.x 版本文档请见[链接](https://github.com/kivisense/wechat-kivicube-plugin-api-demo/tree/v1);
 
 kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
