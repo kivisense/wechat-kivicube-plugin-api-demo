@@ -10,6 +10,6 @@
 />
 
 <view hidden="{{!showTip}}" class="tip">
-  <image src="../image2d-tracking/marker.jpg"></image>
+  <image src="../image2d-tracking/marker.jpg" mode="widthFix" ></image>
   <view>请对准识别图</view>
 </view>

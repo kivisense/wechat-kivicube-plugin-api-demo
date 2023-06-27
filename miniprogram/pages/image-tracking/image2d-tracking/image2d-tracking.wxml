@@ -9,6 +9,6 @@
 />
 
 <view hidden="{{!showTip}}" class="tip">
-  <image src="./marker.jpg"></image>
+  <image src="./marker.jpg" mode="widthFix"></image>
   <view>请对准识别图</view>
 </view>
