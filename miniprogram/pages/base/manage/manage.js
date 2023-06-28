@@ -144,7 +144,7 @@ Page({
 
       const [name] = model.getAnimationNames();
       model.playAnimation({
-        name,
+        animationName: name,
         loop: true,
       });
 

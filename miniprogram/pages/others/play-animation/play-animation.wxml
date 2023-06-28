@@ -1,0 +1,27 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="Pd6b9beoc2ZgSZVMuMajAoRdhq79rday"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+
+<view class="operation" wx:if="{{operation}}">
+  <button
+    wx:for="{{ animationName }}"
+    wx:for-item="name"
+    wx:key="index"
+    bind:tap="playAnimation"
+    data-name="{{name}}"
+    class="play-btn"
+  >
+    {{ name }}
+  </button>
+
+  <button
+    class="play-btn"
+    bind:tap="playAnimationByStep"
+  >
+    自定义步骤播放
+  </button>
+</view>

@@ -23,6 +23,7 @@
     "pages/others/simpleAnimation/simpleAnimation",
     "pages/others/tweenAnimation/tweenAnimation",
     "pages/others/recorder/recorder",
+    "pages/others/play-animation/play-animation",
     "pages/cloudar/skipCloudar/skipCloudar",
     "pages/image-tracking/image2d-tracking/image2d-tracking",
     "pages/image-tracking/tracking-version/tracking-version",
@@ -34,7 +35,7 @@
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.0.0",
+      "version": "2.1.0",
       "provider": "wx3bbab3920eabccb2"
     }
   },

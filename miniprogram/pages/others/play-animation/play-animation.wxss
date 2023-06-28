@@ -1,0 +1,18 @@
+.operation {
+  position: absolute;
+  z-index: 1;
+  bottom: 10vw;
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+button {
+  width: 25vw;
+  height: 10vw;
+}
+
+.play-btn {
+  width: 20vw;
+  margin: 5px;
+}

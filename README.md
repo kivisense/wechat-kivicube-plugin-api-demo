@@ -44,19 +44,21 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 #### 三、其他
 
-##### 1.[动态切换前后摄像头](./miniprogram/pages/others/camera/)
+##### 1.[自定义动画播放和控制](./miniprogram/pages/others/play-animation/)
 
-##### 2.[自动播放](./miniprogram/pages/others/autoPlay/)
+##### 2.[动态切换前后摄像头](./miniprogram/pages/others/camera/)
 
-##### 3.[自定义UI 穿透自定义UI点击到模型](./miniprogram/pages/others/penetrateUI/)
+##### 3.[自动播放](./miniprogram/pages/others/autoPlay/)
 
-##### 4.[拍照处理 自定义拍照按钮](./miniprogram/pages/others/photo/)
+##### 4.[自定义UI 穿透自定义UI点击到模型](./miniprogram/pages/others/penetrateUI/)
 
-##### 5.[简单的自定义动画](./miniprogram/pages/others/simpleAnimation/)
+##### 5.[拍照处理 自定义拍照按钮](./miniprogram/pages/others/photo/)
 
-##### 6.[使用TWEEN 实现缓动动画](./miniprogram/pages/others/tweenAnimation/)
+##### 6.[简单的自定义动画](./miniprogram/pages/others/simpleAnimation/)
 
-##### 7.[AR画面录制](./miniprogram/pages/others/recorder/)
+##### 7.[使用TWEEN 实现缓动动画](./miniprogram/pages/others/tweenAnimation/)
+
+##### 8.[AR画面录制](./miniprogram/pages/others/recorder/)
 
 #### 四、云识别
 

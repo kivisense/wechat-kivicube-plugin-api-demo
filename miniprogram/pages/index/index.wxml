@@ -24,6 +24,7 @@
 
 <view class="header">其他</view>
 <view class="second">
+  <navigator url="../others/play-animation/play-animation"> 自定义模型动画播放和控制 </navigator>
   <navigator url="../others/camera/camera"> 动态切换前后摄像头 </navigator>
   <navigator url="../others/autoPlay/autoPlay"> 自动播放 </navigator>
   <navigator url="../others/penetrateUI/penetrateUI"> 自定义UI 穿透自定义UI点击到模型 </navigator>
