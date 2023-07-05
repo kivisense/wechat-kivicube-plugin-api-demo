@@ -1,68 +1,70 @@
-<view class="header">快速开始</view>
-<view class="second">
-  <navigator url="../quick-start/scene/scene">如何获取高级API</navigator>
-</view>
+<scroll-view scroll-y class="layer" >
+  <view class="header">快速开始</view>
+  <view class="second">
+    <navigator url="../quick-start/scene/scene">如何获取高级API</navigator>
+  </view>
 
-<view class="header">基础 素材管理和使用</view>
-<view class="second">
-  <navigator url="../base/common/common">
-    3D对象共有API【基类】- 包含子对象处理、点击事件、渲染钩子函数、显示隐藏等的示例</navigator
+  <view class="header">基础 素材管理和使用</view>
+  <view class="second">
+    <navigator url="../base/common/common">
+      3D对象共有API【基类】- 包含子对象处理、点击事件、渲染钩子函数、显示隐藏等的示例</navigator
+    >
+    <navigator url="../base/model/model"> glb模型 </navigator>
+    <navigator url="../base/group/group"> 组合容器 </navigator>
+    <navigator url="../base/mask/mask"> 将素材指定为遮罩 </navigator>
+    <navigator url="../base/imageSprite/imageSprite"> 精灵图 </navigator>
+    <navigator url="../base/audio/audio"> 音频 </navigator>
+    <navigator url="../base/video/video"> 视频/透明视频 </navigator>
+    <navigator url="../base/panorama/panorama"> 全景图 </navigator>
+    <navigator url="../base/panorama-video/panorama-video"> 全景视频 </navigator>
+    <navigator url="../base/sky-box/sky-box"> 天空盒子 </navigator>
+    <navigator url="../base/light/light"> 灯光 </navigator>
+    <navigator url="../base/env-map/env-map"> 自定义环境贴图 </navigator>
+    <navigator url="../base/manage/manage"> 素材管理 包含自定义增删改素材 </navigator>
+  </view>
+
+  <view class="header">其他</view>
+  <view class="second">
+    <navigator url="../others/play-animation/play-animation"> 自定义模型动画播放和控制 </navigator>
+    <navigator url="../others/camera/camera"> 动态切换前后摄像头 </navigator>
+    <navigator url="../others/autoPlay/autoPlay"> 自动播放 </navigator>
+    <navigator url="../others/penetrateUI/penetrateUI"> 自定义UI 穿透自定义UI点击到模型 </navigator>
+    <navigator url="../others/photo/photo"> 拍照处理 自定义拍照按钮 </navigator>
+    <navigator url="../others/simpleAnimation/simpleAnimation"> 简单的自定义动画 </navigator>
+    <navigator url="../others/tweenAnimation/tweenAnimation"> 使用TWEEN 实现缓动动画 </navigator>
+    <navigator url="../others/recorder/recorder"> AR画面录制 </navigator>
+  </view>
+
+  <view class="header">云识别</view>
+  <view class="second">
+    <navigator url="../cloudar/skipCloudar/skipCloudar">
+      云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】</navigator
+    >
+  </view>
+
+  <view class="header">图像追踪</view>
+  <view class="second">
+    <navigator url="../image-tracking/image2d-tracking/image2d-tracking"
+      >使用license去除图像追踪水印</navigator
+    >
+    <navigator url="../image-tracking/tracking-version/tracking-version"
+      >手动设置图像追踪版本</navigator
+    >
+  </view>
+
+  <view class="header">合辑</view>
+
+  <navigator class="title" url="../collection/collection/collection"
+    >基础【如何获取高级API】</navigator
   >
-  <navigator url="../base/model/model"> glb模型 </navigator>
-  <navigator url="../base/group/group"> 组合容器 </navigator>
-  <navigator url="../base/mask/mask"> 将素材指定为遮罩 </navigator>
-  <navigator url="../base/imageSprite/imageSprite"> 精灵图 </navigator>
-  <navigator url="../base/audio/audio"> 音频 </navigator>
-  <navigator url="../base/video/video"> 视频/透明视频 </navigator>
-  <navigator url="../base/panorama/panorama"> 全景图 </navigator>
-  <navigator url="../base/panorama-video/panorama-video"> 全景视频 </navigator>
-  <navigator url="../base/sky-box/sky-box"> 天空盒子 </navigator>
-  <navigator url="../base/light/light"> 灯光 </navigator>
-  <navigator url="../base/env-map/env-map"> 自定义环境贴图 </navigator>
-  <navigator url="../base/manage/manage"> 素材管理 包含自定义增删改素材 </navigator>
-</view>
 
-<view class="header">其他</view>
-<view class="second">
-  <navigator url="../others/play-animation/play-animation"> 自定义模型动画播放和控制 </navigator>
-  <navigator url="../others/camera/camera"> 动态切换前后摄像头 </navigator>
-  <navigator url="../others/autoPlay/autoPlay"> 自动播放 </navigator>
-  <navigator url="../others/penetrateUI/penetrateUI"> 自定义UI 穿透自定义UI点击到模型 </navigator>
-  <navigator url="../others/photo/photo"> 拍照处理 自定义拍照按钮 </navigator>
-  <navigator url="../others/simpleAnimation/simpleAnimation"> 简单的自定义动画 </navigator>
-  <navigator url="../others/tweenAnimation/tweenAnimation"> 使用TWEEN 实现缓动动画 </navigator>
-  <navigator url="../others/recorder/recorder"> AR画面录制 </navigator>
-</view>
-
-<view class="header">云识别</view>
-<view class="second">
-  <navigator url="../cloudar/skipCloudar/skipCloudar">
-    云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】</navigator
-  >
-</view>
-
-<view class="header">图像追踪</view>
-<view class="second">
-  <navigator url="../image-tracking/image2d-tracking/image2d-tracking"
-    >使用license去除图像追踪水印</navigator
-  >
-  <navigator url="../image-tracking/tracking-version/tracking-version"
-    >手动设置图像追踪版本</navigator
-  >
-</view>
-
-<view class="header">合辑</view>
-
-<navigator class="title" url="../collection/collection/collection"
-  >基础【如何获取高级API】</navigator
->
-
-<view class="title">合辑【如何使用高级API】</view>
-<view class="second">
-  <navigator url="../collection/backToScan/backToScan">
-    云识别类型合辑 - 自定义返回扫描功能
-  </navigator>
-  <navigator url="../collection/cloudar/cloudar"> 云识别开启与关闭 </navigator>
-  <navigator url="../collection/scene/scene"> 场景的打开与关闭 </navigator>
-  <navigator url="../collection/collectionPhoto/collectionPhoto"> 拍照 </navigator>
-</view>
+  <view class="title">合辑【如何使用高级API】</view>
+  <view class="second">
+    <navigator url="../collection/backToScan/backToScan">
+      云识别类型合辑 - 自定义返回扫描功能
+    </navigator>
+    <navigator url="../collection/cloudar/cloudar"> 云识别开启与关闭 </navigator>
+    <navigator url="../collection/scene/scene"> 场景的打开与关闭 </navigator>
+    <navigator url="../collection/collectionPhoto/collectionPhoto"> 拍照 </navigator>
+  </view>
+</scroll-view>

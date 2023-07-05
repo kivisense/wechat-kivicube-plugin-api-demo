@@ -7,6 +7,8 @@ Page({
 
   async onLoad() {
     try {
+      wx.showLoading();
+
       // 小程序并不支持任意的图片分辨率，建议不要超过1024x1024。否则加载时会报错。
       this.downloadEnvMap = Promise.all([
         requestFile(
@@ -93,6 +95,7 @@ Page({
 
     this.view.add(this.model, useDefaultEnvMap);
     this.setData({ showOperate: true });
+    wx.hideLoading();
   },
 
   useCubeMap() {

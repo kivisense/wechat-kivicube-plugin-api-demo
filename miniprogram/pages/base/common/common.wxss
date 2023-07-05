@@ -19,6 +19,7 @@ view {
 .hide,
 .show {
   position: absolute;
+  z-index: 2;
   bottom: 10vw;
   left: 20vw;
   width: auto;
