@@ -31,11 +31,12 @@
     "pages/collection/backToScan/backToScan",
     "pages/collection/cloudar/cloudar",
     "pages/collection/collectionPhoto/collectionPhoto",
-    "pages/collection/scene/scene"
+    "pages/collection/scene/scene",
+    "pages/others/trackball/trackball"
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.1.0",
+      "version": "2.8.0",
       "provider": "wx3bbab3920eabccb2"
     }
   },
