@@ -1,0 +1,11 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="ICGvXW86u9rz8N6P09IwjaJAQxqzL4Cy"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+<view class="operation">
+  <button bind:tap="setAnisotropy">设置各向异性</button>
+  <button bind:tap="resetAnisotropy">重置各向异性</button>
+</view>

@@ -1,0 +1,30 @@
+.kivicube {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.text {
+  position: absolute;
+  z-index: 1;
+  top: 10vw;
+  width: 100%;
+  text-align: center;
+}
+
+.operation {
+  position: absolute;
+  z-index: 1;
+  bottom: 5vw;
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+button {
+  width: 45vw;
+  padding: 2.13vw 3.2vw;
+  margin-bottom: 5vw;
+  font-size: 3.73vw;
+}

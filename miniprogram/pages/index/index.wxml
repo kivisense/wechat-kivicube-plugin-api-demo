@@ -1,4 +1,4 @@
-<scroll-view scroll-y class="layer" >
+<scroll-view scroll-y class="layer">
   <view class="header">快速开始</view>
   <view class="second">
     <navigator url="../quick-start/scene/scene">如何获取高级API</navigator>
@@ -14,13 +14,47 @@
     <navigator url="../base/mask/mask"> 将素材指定为遮罩 </navigator>
     <navigator url="../base/imageSprite/imageSprite"> 精灵图 </navigator>
     <navigator url="../base/audio/audio"> 音频 </navigator>
-    <navigator url="../base/video/video"> 视频/透明视频 </navigator>
+    <navigator url="../base/video/video"> AR视频/透明视频 </navigator>
     <navigator url="../base/panorama/panorama"> 全景图 </navigator>
     <navigator url="../base/panorama-video/panorama-video"> 全景视频 </navigator>
     <navigator url="../base/sky-box/sky-box"> 天空盒子 </navigator>
     <navigator url="../base/light/light"> 灯光 </navigator>
     <navigator url="../base/env-map/env-map"> 自定义环境贴图 </navigator>
     <navigator url="../base/manage/manage"> 素材管理 包含自定义增删改素材 </navigator>
+  </view>
+
+  <view class="header">云识别/陀螺仪场景</view>
+  <view class="second">
+    <navigator url="../cloudar/skipCloudar/skipCloudar">
+      云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】</navigator
+    >
+  </view>
+
+  <view class="header">图像AR场景</view>
+  <view class="second">
+    <navigator url="../image-tracking/image2d-tracking/image2d-tracking"
+      >使用license去除图像追踪水印</navigator
+    >
+    <navigator url="../image-tracking/tracking-version/tracking-version"
+      >手动设置图像追踪版本</navigator
+    >
+  </view>
+
+  <view class="header">平面AR场景</view>
+  <view class="second">
+    <navigator url="../plane/horizontal/horizontal"> AR指示器点击放置-水平面 </navigator>
+    <navigator url="../plane/vertical/vertical"> AR指示器点击放置-竖直面 </navigator>
+    <navigator url="../plane/auto-place/auto-place"> 检测到平面自动放置 </navigator>
+  </view>
+
+  <view class="header">漫游AR场景</view>
+  <view class="second">
+    <navigator url="../roam/roam-ar/roam-ar"> 漫游AR场景示例 </navigator>
+  </view>
+  <view class="header">世界AR场景</view>
+  <view class="second">
+    <navigator url="../world/world-ar/world-ar"> 世界AR场景示例 </navigator>
+    <navigator url="../world/world-marker/world-marker"> 世界AR场景自定义 marker </navigator>
   </view>
 
   <view class="header">其他</view>
@@ -34,23 +68,13 @@
     <navigator url="../others/tweenAnimation/tweenAnimation"> 使用TWEEN 实现缓动动画 </navigator>
     <navigator url="../others/trackball/trackball"> 使用 trackball 手势 </navigator>
     <navigator url="../others/recorder/recorder"> AR画面录制 </navigator>
-  </view>
-
-  <view class="header">云识别</view>
-  <view class="second">
-    <navigator url="../cloudar/skipCloudar/skipCloudar">
-      云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】</navigator
-    >
-  </view>
-
-  <view class="header">图像追踪</view>
-  <view class="second">
-    <navigator url="../image-tracking/image2d-tracking/image2d-tracking"
-      >使用license去除图像追踪水印</navigator
-    >
-    <navigator url="../image-tracking/tracking-version/tracking-version"
-      >手动设置图像追踪版本</navigator
-    >
+    <navigator url="../others/tone-mapping/tone-mapping"> 设置色调映射 </navigator>
+    <navigator url="../others/set-anisotropy/set-anisotropy"> 设置各向异性 </navigator>
+    <navigator url="../others/load-compressed-gltf/load-compressed-gltf">
+      加载量化(优化三角形/网格/材质/纹理/顶点/动画)后的模型
+    </navigator>
+    <navigator url="../others/screen/screen"> camera - 获取位置、3D素材放置屏幕上 </navigator>
+    <navigator url="../others/model-render/model-render"> 简单判断模型是否在相机画面内 </navigator>
   </view>
 
   <view class="header">合辑</view>

@@ -1,0 +1,12 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="gOTmDFndBXw6Mv0jfCMojr97y3QwKJ5z"
+  hideTakePhoto="{{true}}"
+  bind:ready="ready"
+  bind:cloudarStart="cloudarStart"
+  bind:cloudarEnd="cloudarEnd"
+  bind:planeDetectStart="planeDetectStart"
+  bind:planeDetectEnd="planeDetectEnd"
+  bind:sceneStart="sceneStart"
+  bind:unsupport="unsupport"
+/>

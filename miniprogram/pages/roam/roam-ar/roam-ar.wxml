@@ -1,0 +1,13 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="X3UyaDM1f7JX4i9hN1zbbOyuJCPvoifG"
+  hideTakePhoto="{{true}}"
+  bind:ready="ready"
+  bind:locateDeviceStart="locateDeviceStart"
+  bind:locateDeviceEnd="locateDeviceEnd"
+  bind:sceneStart="sceneStart"
+/>
+
+<view class="operation">
+  <view wx:if="{{ showTips }}"> 请缓慢左右移动手机 </view>
+</view>

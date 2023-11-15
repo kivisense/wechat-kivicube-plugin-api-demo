@@ -28,7 +28,7 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 ##### 6.[音频](./miniprogram/pages/base/audio/)
 
-##### 7.[视频/透明视频](./miniprogram/pages/base/video/)
+##### 7.[AR视频/透明视频](./miniprogram/pages/base/video/)
 
 ##### 8.[全景图](./miniprogram/pages/base/panorama/)
 
@@ -60,17 +60,45 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 ##### 8.[AR画面录制](./miniprogram/pages/others/recorder/)
 
-#### 四、云识别
+##### 9.[设置色调映射](./miniprogram/pages/others/tone-mapping/)
+
+##### 10.[设置各向异性](./miniprogram/pages/others/set-anisotropy/)
+
+##### 11.[加载量化(优化三角形/网格/材质/纹理/顶点/动画)后的模型](./miniprogram/pages/others/load-compressed-gltf/)
+
+##### 12.[camera - 获取位置、3D素材放置屏幕上](./miniprogram/pages/others/screen/)
+
+##### 13、[简单判断模型是否在相机画面内](./miniprogram/pages/others/model-render/)
+
+#### 四、云识别/陀螺仪场景
 
 ##### 1.[云识别/陀螺仪场景主动跳过云识别阶段【不依赖后台配置】](./miniprogram/pages/cloudar/skipCloudar/)
 
-#### 五、图像追踪
+#### 五、图像AR场景
 
 ##### 1.[使用license去除图像追踪水印](./miniprogram/pages/image-tracking/image2d-tracking/)
 
 ##### 2.[手动设置图像追踪版本](./miniprogram/pages/image-tracking/tracking-version/)
 
-#### 六、合辑
+#### 六、平面AR场景
+
+##### 1.[AR指示器点击放置-水平面](./miniprogram/pages/plane/horizontal/)
+
+##### 2.[AR指示器点击放置-竖直面](./miniprogram/pages/plane/vertical/)
+
+##### 2.[检测到平面自动放置](./miniprogram/pages/plane/auto-place/)
+
+#### 七、漫游AR场景
+
+##### 1.[漫游AR场景示例](./miniprogram/pages/roam/roam-ar/)
+
+#### 八、世界AR场景
+
+##### 1.[世界AR场景示例](./miniprogram/pages/world/world-ar/)
+
+##### 1.[世界AR场景 自定义 marker示例](./miniprogram/pages/world/world-marker/)
+
+#### 九、合辑
 
 ##### 1.[基础【如何获取高级API】](./miniprogram/pages/collection/collection/)
 
