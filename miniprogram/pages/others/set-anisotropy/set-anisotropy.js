@@ -41,7 +41,7 @@ Page({
   },
   setAnisotropy() {
     /**
-     * @param anisotropy 沿着轴，通过具有最高纹素密度的像素的样本数，同 Three.Texture.anisotropy
+     * @param anisotropy 设置一个较高的值将会产生比基本的mipmap更清晰的效果，代价是需要使用更多纹理样本。这个值通常是2的幂。
      * @param mapType 材质类型，默认为 "map"
      * @param recursive  是否递归，默认为 false
      */

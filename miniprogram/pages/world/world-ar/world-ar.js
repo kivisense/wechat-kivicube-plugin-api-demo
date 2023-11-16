@@ -17,7 +17,7 @@ Page({
     // const view = this.view;
   },
 
-  // 设备不支持 世界AR 体验的提示
+  // 设备不支持 世界AR 体验的提示事件
   unsupport({ detail }) {
     console.log(detail.isUnsupportWorld); // 不支持世界 AR 的设备
     console.log(detail.message);

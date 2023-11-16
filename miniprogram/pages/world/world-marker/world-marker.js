@@ -20,7 +20,7 @@ Page({
         "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/rabbit.glb"
       ),
       requestFile(markerImageUrl),
-      downloadMarker(markerImageUrl),
+      downloadMarker(markerImageUrl), // 下载 marker
     ]);
   },
 
@@ -46,6 +46,7 @@ Page({
 
   anchored({ detail }) {
     console.log("anchored", detail);
+    console.log(`识别成功，markerId：${detail.markerId}`);
   },
 
   async addMarker() {
@@ -69,15 +70,24 @@ Page({
 
       const markerAr = view.getMarkerAR();
 
+      /**
+       * 配置识别图。可配置多张。
+       * @params markerPath {String|Array<String>} - 识别图本地路径。注意：只支持在wx.env.USER_DATA_PATH文件夹中的识别图。
+       * @returns {Promsie<Number|Array<Number>>} 识别图Id
+       */
       const markerIds = await markerAr.setMarker([markerPath]);
 
       console.warn("setMarker 返回的识别图ID：", markerIds);
       wx.hideLoading();
+
+      // 如果只用作首次定位，用完后可移除marker
+      // markerAr.removeMarker(markerId);
     } catch (error) {
       console.error(error);
     }
   },
 
+  // anchoring只有识别图持续出现在相机画面内才会执行
   anchoring({ detail }) {
     console.log(detail.markerId);
     // console.log(detail.matrix);

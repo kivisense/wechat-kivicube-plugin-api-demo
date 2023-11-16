@@ -1,6 +1,6 @@
 <kivicube-scene
   class="kivicube"
-  scene-id="g4740tr108E7e89fw05Z3X64EZI1jtD5"
+  scene-id="5bKhRSw8Lo1gsi0D8no1LtWXEABz7WoL"
   hideTakePhoto="{{true}}"
   bind:ready="ready"
   bind:cloudarStart="cloudarStart"
