@@ -1,15 +1,8 @@
-import {
-  errorHandler,
-  showAuthModal,
-  downloadFile,
-} from "../../../utils/helper";
+import { errorHandler, showAuthModal } from "../../../utils/helper";
 
 Page({
   onLoad() {
     wx.showLoading({ title: "初始化中...", mask: true });
-    this.downloadAsset = downloadFile(
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/slam.mp4"
-    );
   },
 
   async ready({ detail: view }) {
@@ -23,13 +16,9 @@ Page({
   async sceneStart() {
     const view = this.view;
     try {
-      const videoPath = await this.downloadAsset;
-      const video3d = await view.createVideo(videoPath);
+      const video3d = view.getObject("slam");
       video3d.position.set(0, 0, 0);
       video3d.scale.setScalar(0.25);
-      video3d.loop = true;
-      video3d.videoContext.play();
-      view.add(video3d);
 
       let isVisible = false;
       let timer = null;
