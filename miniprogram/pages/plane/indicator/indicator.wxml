@@ -1,6 +1,6 @@
 <kivicube-scene
   class="kivicube"
-  scene-id="89xhVc37IS1ZOjWSz8z5Uz21Af08UVFn"
+  scene-id="5bKhRSw8Lo1gsi0D8no1LtWXEABz7WoL"
   hideTakePhoto="{{true}}"
   bind:ready="ready"
   bind:cloudarStart="cloudarStart"
@@ -12,5 +12,11 @@
   bind:sceneStart="sceneStart"
   bind:unsupport="unsupport"
   hideScan
-  hidePlaneDetect
+  hidePlaneDetect="{{ hidePlaneDetect }}"
 />
+
+<view class="operation">
+  <view wx:if="{{showScan}}"> 请扫描识别图 </view>
+  <view wx:if="{{showStartTips}}"> 请对准水平面后体验 </view>
+  <view wx:if="{{showPlaneTips}}"> 请对准平面，左右缓慢移动 </view>
+</view>

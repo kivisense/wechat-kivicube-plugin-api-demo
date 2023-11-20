@@ -9,5 +9,5 @@
 />
 
 <view class="operation">
-  <view wx:if="{{ showTips }}"> 请缓慢左右移动手机 </view>
+  <view wx:if="{{ showTips }}"> 请缓慢晃动手机 </view>
 </view>

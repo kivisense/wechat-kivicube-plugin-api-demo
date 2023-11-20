@@ -2,7 +2,16 @@
   class="kivicube"
   scene-id="kQpQ7TVa0V96i8DKoWmlW0nh7Vyl86at"
   hideTakePhoto="{{true}}"
+  bind:error="error"
+  bind:ready="ready"
+  bind:anchored="anchored"
+  bind:anchoring="anchoring"
   bind:ready="ready"
   bind:sceneStart="sceneStart"
   bind:unsupport="unsupport"
 />
+
+<view hidden="{{!showTip}}" class="tip">
+  <image src="./marker.jpg" mode="widthFix"></image>
+  <view>请对准识别图</view>
+</view>

@@ -8,12 +8,7 @@ Page({
   },
 
   ready({ detail: view }) {
-    try {
-      this.view = view;
-    } catch (e) {
-      wx.hideLoading();
-      errorHandler(e);
-    }
+    this.view = view;
   },
 
   async sceneStart() {
@@ -42,7 +37,7 @@ Page({
   setAnisotropy() {
     /**
      * @param anisotropy 设置一个较高的值将会产生比基本的mipmap更清晰的效果，代价是需要使用更多纹理样本。这个值通常是2的幂。
-     * @param mapType 材质类型，默认为 "map"
+     * @param mapType 贴图类型，默认为 "map"
      * @param recursive  是否递归，默认为 false
      */
     this.model.setAnisotropy(8, "map", true);

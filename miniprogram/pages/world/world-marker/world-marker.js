@@ -35,6 +35,7 @@ Page({
       const view = this.view;
       const markerAr = view.getMarkerAR();
 
+      // 当前是否追踪到某张识别图
       console.log(`isTracked: ${markerAr.isTracked()}`);
       this.setData({
         showBtn: true,
@@ -42,11 +43,6 @@ Page({
     } catch (e) {
       errorHandler(e);
     }
-  },
-
-  anchored({ detail }) {
-    console.log("anchored", detail);
-    console.log(`识别成功，markerId：${detail.markerId}`);
   },
 
   async addMarker() {
@@ -85,12 +81,6 @@ Page({
     } catch (error) {
       console.error(error);
     }
-  },
-
-  // anchoring只有识别图持续出现在相机画面内才会执行
-  anchoring({ detail }) {
-    console.log(detail.markerId);
-    // console.log(detail.matrix);
   },
 
   unsupport({ detail }) {

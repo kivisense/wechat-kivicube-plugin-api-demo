@@ -42,9 +42,8 @@
 
   <view class="header">平面AR场景</view>
   <view class="second">
-    <navigator url="../plane/horizontal/horizontal"> AR指示器点击放置-水平面 </navigator>
-    <navigator url="../plane/vertical/vertical"> AR指示器点击放置-竖直面 </navigator>
-    <navigator url="../plane/auto-place/auto-place"> 检测到平面自动放置 </navigator>
+    <navigator url="../plane/indicator/indicator"> 使用指示器点击放置 </navigator>
+    <navigator url="../plane/auto-locate/auto-locate"> 检测到平面自动放置 </navigator>
   </view>
 
   <view class="header">漫游AR场景</view>

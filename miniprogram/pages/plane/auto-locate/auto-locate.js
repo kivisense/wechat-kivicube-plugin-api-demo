@@ -6,35 +6,46 @@ Page({
   },
 
   async ready({ detail: view }) {
+    // 和页面../indicator/indicator保持一致，因为都是平面AR类型
     this.view = view;
     this.skipCloudar = view.sceneInfo.setting.skipScanMarker;
   },
 
-  cloudarStart() {
+  // 和页面../indicator/indicator保持一致，因为都是平面AR类型
+  cloudarStart({ detail }) {
     console.log(`cloudarStart`, this.skipCloudar);
     if (!this.skipCloudar) {
       console.log("场景配置跳过了云识别");
     }
   },
 
-  cloudarEnd() {
+  // 和页面../indicator/indicator保持一致，因为都是平面AR类型
+  cloudarEnd({ detail }) {
     console.log(`cloudarEnd`);
   },
 
-  // 平面检测开始
-  planeDetectStart() {
+  // 和页面../indicator/indicator保持一致，因为都是平面AR类型
+  planeDetectStart({ detail }) {
     wx.hideLoading();
     console.log(`planeDetectStart`);
   },
 
-  // 平面检测结束
-  planeDetectEnd() {
+  // 和页面../indicator/indicator保持一致，因为都是平面AR类型
+  planeDetectEnd({ detail }) {
     console.log(`planeDetectEnd`);
   },
 
-  // 自动放置，尝试定位场景, 可能触发多次
-  tryLocateScene() {
+  // 自动放置，尝试放置场景, 可能触发多次，直到成功。
+  tryLocateScene({ detail }) {
     console.log(`tryLocateScene`);
+    const { cancelLocateScene, result, nextLocateSceneDelayTime } = detail;
+    // result：是否放置成功
+    if (result) {
+      console.log("场景自动放置成功");
+    } else {
+      // 如果不成功，可设置下次尝试放置的延时时间，毫秒，不设置时默认100ms。
+      nextLocateSceneDelayTime(200);
+    }
   },
 
   async sceneStart() {

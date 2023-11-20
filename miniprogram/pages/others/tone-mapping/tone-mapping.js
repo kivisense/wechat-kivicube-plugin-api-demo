@@ -56,6 +56,8 @@ Page({
     this.setData({
       toneMapping: type,
     });
+    // 产品上开启色调映射后，默认是使用ACESFilmicToneMapping
+    // 如果需要其他类型，可调用此API设置。
     this.view.setToneMapping(this.view.constants[type]);
   },
 });

@@ -8,20 +8,16 @@ Page({
   onLoad() {
     wx.showLoading({ title: "初始化中...", mask: true });
 
-    this.downloadAsset = Promise.all([
-      downloadFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/glow.mp4"
-      ),
-    ]);
+    this.downloadAsset = downloadFile(
+      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/glow.mp4"
+    );
   },
 
   async ready({ detail: view }) {
     this.view = view;
 
-    const [alphaVideoPath] = await this.downloadAsset;
-    const [alphaVideo3d] = await Promise.all([
-      view.createAlphaVideo(alphaVideoPath),
-    ]);
+    const alphaVideoPath = await this.downloadAsset;
+    const alphaVideo3d = await view.createAlphaVideo(alphaVideoPath);
 
     alphaVideo3d.position.x = 0;
     alphaVideo3d.position.y = 0;
@@ -37,47 +33,12 @@ Page({
     alphaVideo3d.setGLState("depthTest", false, recursive);
     alphaVideo3d.setGLState("depthWrite", false, recursive);
 
-    this.alphaVideo3d = alphaVideo3d;
+    // 增加在camera节点下，使其相对屏幕位置呈现。
+    view.defaultCamera.add(alphaVideo3d);
   },
 
-  planeDetectStart() {
+  loadSceneEnd() {
     wx.hideLoading();
-  },
-
-  async sceneStart() {
-    const view = this.view;
-    try {
-      const { name } = view.sceneInfo.objects[0];
-      const rabbitModel = view.getObject(name);
-
-      // 增加在camera节点下，使其相对屏幕位置呈现。
-      const camera = view.defaultCamera;
-      camera.add(this.alphaVideo3d);
-
-      let showModal = false;
-      rabbitModel.onBeforeRender = () => {
-        if (showModal) return;
-
-        // 计算手机和3d模型之间的距离值。
-        const distance = camera.position.distanceTo(rabbitModel.position);
-        if (distance < 0.5) {
-          showModal = true;
-          wx.showModal({
-            title: "提示",
-            content: "你已靠近目标啦~",
-            showCancel: false,
-            complete() {
-              // 避免闪现
-              setTimeout(() => {
-                showModal = false;
-              }, 1000);
-            },
-          });
-        }
-      };
-    } catch (e) {
-      errorHandler(e);
-    }
   },
 
   error({ detail }) {

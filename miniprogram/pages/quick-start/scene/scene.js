@@ -30,13 +30,22 @@ Page({
       metadata: {
         htmlTitle, // 编辑器中设置的网页标题
         share: { // 编辑器中设置的分享信息
-          description,
-          pictureUrl,
-          title
+          title, // 分享标题
+          description, // 分享描述
+          pictureUrl, // Web端分享缩略图
+          imageUrl, // 小程序端转发图
         }
       },
       setting: {
-        skipScanMarker // 是否跳过扫描识别图阶段
+        skipScanMarker, // 是否跳过扫描识别图阶段
+        hideTakePhoto,
+        showSwitchCamera,
+        hideRecordVideo,
+        hideStart,
+        plane: {
+          horizontal,
+          vertical
+        },
       },
       objects: [ // 编辑器中增加的所有素材信息列表
         {
@@ -63,10 +72,15 @@ Page({
     // 也可获取指定的素材对象
     if (this.view.sceneInfo.objects.length > 0) {
       const { name } = this.view.sceneInfo.objects[0];
-      // 不同类型的素材对象，既拥有独有的API，也拥有共有的API。
-      // 详细使用在页面/pages/api/common/common查看共有API
-      // 页面/pages/api/video/video, /pages/api/model/model,
-      // /pages/api/audio/audio，查看独有API
+      /*
+        不同类型的素材对象，既拥有独有的API，也拥有共有的API。
+        详细使用在页面pages/base/common/common查看共有API
+
+        /pages/base/audio/audio
+        /pages/base/model/model
+        /pages/base/video/video
+        查看各素材独有API
+      */
       console.log(this.view.getObject(name));
     }
   },

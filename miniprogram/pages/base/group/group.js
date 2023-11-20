@@ -90,9 +90,7 @@ Page({
       imageSprite.position.set(0, 0, -1);
       imageSprite.scale.setScalar(10);
 
-      // 此处指定的大小，为所有内容融合后的整体大小。
-      // 一般来说，组合内部的内容大小，还需要自行调整。
-      view.add(group, 1);
+      view.add(group);
 
       group.position.set(0, 0, -2);
 

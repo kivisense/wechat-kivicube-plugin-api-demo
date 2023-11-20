@@ -82,11 +82,9 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 #### 六、平面AR场景
 
-##### 1.[AR指示器点击放置-水平面](./miniprogram/pages/plane/horizontal/)
+##### 1.[使用指示器点击放置](./miniprogram/pages/plane/indicator/)
 
-##### 2.[AR指示器点击放置-竖直面](./miniprogram/pages/plane/vertical/)
-
-##### 2.[检测到平面自动放置](./miniprogram/pages/plane/auto-place/)
+##### 2.[检测到平面自动放置](./miniprogram/pages/plane/auto-locate/)
 
 #### 七、漫游AR场景
 

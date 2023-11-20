@@ -2,11 +2,10 @@
   class="kivicube"
   scene-id="kQpQ7TVa0V96i8DKoWmlW0nh7Vyl86at"
   hideTakePhoto="{{true}}"
+  bind:error="error"
   bind:ready="ready"
   bind:sceneStart="sceneStart"
   bind:unsupport="unsupport"
-  bind:anchoring="anchoring"
-  bind:anchored="anchored"
 />
 
 <button wx:if="{{showBtn}}" class="btn" bind:tap="addMarker">新增自定义 marker</button>

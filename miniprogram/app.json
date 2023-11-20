@@ -38,9 +38,8 @@
     "pages/others/load-compressed-gltf/load-compressed-gltf",
     "pages/others/screen/screen",
     "pages/others/model-render/model-render",
-    "pages/plane/horizontal/horizontal",
-    "pages/plane/vertical/vertical",
-    "pages/plane/auto-place/auto-place",
+    "pages/plane/indicator/indicator",
+    "pages/plane/auto-locate/auto-locate",
     "pages/roam/roam-ar/roam-ar",
     "pages/world/world-ar/world-ar",
     "pages/world/world-marker/world-marker"
@@ -54,7 +53,7 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "Kivicube Plugin API Demo",
     "navigationBarTextStyle": "black",
     "disableScroll": true
   },

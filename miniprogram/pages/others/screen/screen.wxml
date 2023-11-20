@@ -3,6 +3,5 @@
   scene-id="g4740tr108E7e89fw05Z3X64EZI1jtD5"
   hideTakePhoto="{{true}}"
   bindready="ready"
-  bindplaneDetectStart="planeDetectStart"
-  bindsceneStart="sceneStart"
+  bindloadSceneEnd="loadSceneEnd"
 />

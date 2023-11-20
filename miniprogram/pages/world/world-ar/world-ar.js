@@ -5,16 +5,27 @@ import {
 } from "../../../utils/helper";
 
 Page({
+  data: {
+    showTip: true,
+  },
+
   onLoad() {
     wx.showLoading({ title: "初始化中...", mask: true });
   },
 
-  async ready({ detail: view }) {
+  ready({ detail: view }) {
     this.view = view;
     wx.hideLoading();
   },
-  async sceneStart() {
-    // const view = this.view;
+
+  anchored({ detail }) {
+    const { markerId } = detail;
+    this.setData({ showTip: false });
+  },
+
+  anchoring({ detail }) {
+    // 追踪到的识别图id，和匹配的追踪矩阵
+    const { markerId, matrix } = detail;
   },
 
   // 设备不支持 世界AR 体验的提示事件
