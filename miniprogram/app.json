@@ -31,18 +31,29 @@
     "pages/collection/backToScan/backToScan",
     "pages/collection/cloudar/cloudar",
     "pages/collection/collectionPhoto/collectionPhoto",
-    "pages/collection/scene/scene"
+    "pages/collection/scene/scene",
+    "pages/others/trackball/trackball",
+    "pages/others/tone-mapping/tone-mapping",
+    "pages/others/set-anisotropy/set-anisotropy",
+    "pages/others/load-compressed-gltf/load-compressed-gltf",
+    "pages/others/screen/screen",
+    "pages/others/model-render/model-render",
+    "pages/plane/indicator/indicator",
+    "pages/plane/auto-locate/auto-locate",
+    "pages/roam/roam-ar/roam-ar",
+    "pages/world/world-ar/world-ar",
+    "pages/world/world-marker/world-marker"
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.1.0",
+      "version": "2.8.5",
       "provider": "wx3bbab3920eabccb2"
     }
   },
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "Weixin",
+    "navigationBarTitleText": "Kivicube Plugin API Demo",
     "navigationBarTextStyle": "black",
     "disableScroll": true
   },

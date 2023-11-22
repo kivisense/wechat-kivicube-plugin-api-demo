@@ -1,0 +1,13 @@
+.kivicube {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.btn {
+  position: absolute;
+  z-index: 2;
+  right: 5vw;
+  bottom: 50vw;
+  width: 20vw;
+}

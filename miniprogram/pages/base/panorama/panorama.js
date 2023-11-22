@@ -10,17 +10,13 @@ Page({
   onLoad() {
     wx.showLoading({ title: "初始化中..." });
     this.downloadAsset = requestFile(
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/panorama.jpg"
+      "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/panorama/panorama1.jpg"
     );
   },
 
   ready({ detail: view }) {
-    try {
-      this.view = view;
-    } catch (e) {
-      wx.hideLoading();
-      errorHandler(e);
-    }
+    this.view = view;
+    this.view.skipCloudar();
   },
 
   async sceneStart() {
@@ -28,7 +24,7 @@ Page({
     const panoArrayBuffer = await this.downloadAsset;
 
     /**
-     * @param {ArrayBuffer | String } urlOrAb - 全景图的arraybuffer数据或者url地址
+     * @param {ArrayBuffer} ab - 全景图的arraybuffer数据
      * @param {Number} [sgments=56] - 全景图的分段，数值越高精度越高，全景图如果看着有扭曲现象（不是畸变）可以适度调高此精度
      * @param {Function} [onProgress] - 全景图加载进度回调函数
      * **/

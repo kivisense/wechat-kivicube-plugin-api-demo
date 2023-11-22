@@ -1,0 +1,16 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="GX80ScfiNs6NuiIthFxOHLJP0p53nvU8"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+/>
+<view class="text"> 当前: {{toneMapping}} </view>
+
+<view class="operation">
+  <button bind:tap="change" data-type="NoToneMapping">NoToneMapping</button>
+  <button bind:tap="change" data-type="LinearToneMapping">LinearToneMapping</button>
+  <button bind:tap="change" data-type="ReinhardToneMapping">ReinhardToneMapping</button>
+  <button bind:tap="change" data-type="CineonToneMapping">CineonToneMapping</button>
+  <button bind:tap="change" data-type="ACESFilmicToneMapping">ACESFilmicToneMapping</button>
+</view>

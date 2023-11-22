@@ -15,19 +15,19 @@ Page({
 
     this.downloadAsset = Promise.all([
       requestFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/rabbit.glb"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/model/rabbit.glb"
       ),
       downloadFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/slam.mp4"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/video/ar.mp4"
       ),
       downloadFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/glow.mp4"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/video/glow.mp4"
       ),
       requestFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/music-effect.png"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/music-effect.png"
       ),
       requestFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/kivisense-logo.png"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/kivisense-logo.png"
       ),
     ]);
   },
@@ -76,7 +76,7 @@ Page({
       group.add(video);
       group.add(image);
 
-      model3d.scale.setScalar(30);
+      model3d.scale.setScalar(2);
       video.position.set(-1, 1, 0);
       image.position.set(1, 1, 1);
       image.scale.setScalar(0.3);
@@ -90,9 +90,7 @@ Page({
       imageSprite.position.set(0, 0, -1);
       imageSprite.scale.setScalar(10);
 
-      // 此处指定的大小，为所有内容融合后的整体大小。
-      // 一般来说，组合内部的内容大小，还需要自行调整。
-      view.add(group, 1);
+      view.add(group);
 
       group.position.set(0, 0, -2);
 

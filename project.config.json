@@ -33,6 +33,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
+    "bigPackageSizeSupport": true,
     "disableUseStrict": false,
     "minifyWXML": true,
     "compileHotReLoad": true,
