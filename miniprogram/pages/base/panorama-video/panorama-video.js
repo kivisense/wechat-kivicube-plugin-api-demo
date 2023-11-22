@@ -16,7 +16,7 @@ Page({
 
     try {
       const panoramaVideoUrl =
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/panorama-video.mp4";
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/video/panorama-video.mp4";
       /**
        * @param {String} urlOrPath - 全景视频url地址或者小程序本地文件路径
        * @param {String} [defaultThumbnailUrl] - 全景视频的缩略图，用于不支持3d渲染视频的时候显示，为空则降级缩略图功能无效

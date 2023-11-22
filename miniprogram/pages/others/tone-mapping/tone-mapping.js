@@ -1,8 +1,4 @@
-import {
-  errorHandler,
-  showAuthModal,
-  requestFile,
-} from "../../../utils/helper";
+import { errorHandler, showAuthModal } from "../../../utils/helper";
 
 Page({
   data: {
@@ -10,10 +6,6 @@ Page({
   },
   onLoad() {
     wx.showLoading({ title: "初始化中...", mask: true });
-
-    this.downloadAsset = requestFile(
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/damaged-helmet.glb"
-    );
   },
 
   ready({ detail: view }) {
@@ -23,17 +15,6 @@ Page({
 
   async sceneStart() {
     try {
-      const view = this.view;
-
-      const { name } = view.sceneInfo.objects[0];
-      const originModel = view.getObject(name);
-      originModel.visible = false;
-
-      const modelArrayBuffer = await this.downloadAsset;
-      const model = await view.createGltfModel(modelArrayBuffer);
-
-      view.add(model);
-
       wx.hideLoading();
     } catch (e) {
       wx.hideLoading();

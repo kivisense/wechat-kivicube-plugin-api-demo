@@ -8,7 +8,7 @@ Page({
   onLoad() {
     // 小程序并不支持任意的图片分辨率，建议不要超过1024x1024。否则加载时会报错。
     this.downloadImage = requestFile(
-      "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/image-sprite.png"
+      "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/image-sprite.png"
     );
   },
 

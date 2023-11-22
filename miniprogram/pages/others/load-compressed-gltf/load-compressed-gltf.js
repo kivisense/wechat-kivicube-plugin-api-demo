@@ -42,8 +42,8 @@ Page({
     wx.showLoading({ title: "初始化中...", mask: true });
 
     this.downloadAsset = requestMeshCompressionGltfFile(
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/ska/ska.glb",
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/ska/ska.fallback.bin"
+      "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/model/ska/ska.glb",
+      "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/model/ska/ska.fallback.bin"
     );
   },
 

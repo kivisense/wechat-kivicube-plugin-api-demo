@@ -18,7 +18,7 @@ Page({
     const view = this.view;
     try {
       const cubeImageUrl =
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/skybox";
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/skybox";
       const cubeImages = ["px", "nx", "py", "ny", "pz", "nz"];
       const cubePromises = cubeImages.map((image) =>
         requestFile(`${cubeImageUrl}/${image}.jpg`)

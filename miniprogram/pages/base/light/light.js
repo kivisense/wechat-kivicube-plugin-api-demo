@@ -1,8 +1,4 @@
-import {
-  errorHandler,
-  showAuthModal,
-  requestFile,
-} from "../../../utils/helper";
+import { errorHandler, showAuthModal } from "../../../utils/helper";
 
 Page({
   data: {
@@ -15,10 +11,6 @@ Page({
 
   onLoad() {
     wx.showLoading({ title: "初始化中...", mask: true });
-
-    this.downloadAsset = requestFile(
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/damaged-helmet.glb"
-    );
   },
 
   ready({ detail: view }) {
@@ -28,10 +20,9 @@ Page({
   async sceneStart() {
     try {
       const view = this.view;
-      const modelArrayBuffer = await this.downloadAsset;
-      const model = await view.createGltfModel(modelArrayBuffer);
 
-      this.model = model;
+      const { name } = this.view.sceneInfo.objects[0];
+      const model = this.view.getObject(name);
 
       /**
        * 组件内部拥有默认的环境光和平行光，灯光颜色皆为白色，环境光强度为0.4，平行光强度为0.8。
@@ -48,8 +39,6 @@ Page({
         directionalIntensityLeft: defaultDirectionalLightLeft.intensity,
         directionalIntensityRight: defaultDirectionalLightRight.intensity,
       });
-
-      view.add(model);
 
       /**
        * 大部分情况下，对模型使用环境贴图和默认的环境光、平行光已经足够。

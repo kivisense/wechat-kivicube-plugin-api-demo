@@ -9,7 +9,7 @@ Page({
     wx.showLoading({ title: "初始化中...", mask: true });
 
     this.downloadAsset = downloadFile(
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/glow.mp4"
+      "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/video/glow.mp4"
     );
   },
 

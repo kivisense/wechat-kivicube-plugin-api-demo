@@ -12,31 +12,31 @@ Page({
       // 小程序并不支持任意的图片分辨率，建议不要超过1024x1024。否则加载时会报错。
       this.downloadEnvMap = Promise.all([
         requestFile(
-          "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/damaged-helmet.glb"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/model/damaged-helmet.glb"
         ),
         requestFile(
-          "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/cube-map/nx.jpg"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/cube-map/nx.jpg"
         ),
         requestFile(
-          "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/cube-map/ny.jpg"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/cube-map/ny.jpg"
         ),
         requestFile(
-          "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/cube-map/nz.jpg"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/cube-map/nz.jpg"
         ),
         requestFile(
-          "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/cube-map/px.jpg"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/cube-map/px.jpg"
         ),
         requestFile(
-          "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/cube-map/py.jpg"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/cube-map/py.jpg"
         ),
         requestFile(
-          "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/cube-map/pz.jpg"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/cube-map/pz.jpg"
         ),
         requestFile(
-          "https://kivicube-resource.kivisense.com/wechat-kivicube-plugin-api-demo/panorama-map/panorama.jpg"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/panorama/panorama1.jpg"
         ),
         requestFile(
-          "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/hdr/default.hdr"
+          "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/envmap/default.hdr"
         ),
       ]);
 

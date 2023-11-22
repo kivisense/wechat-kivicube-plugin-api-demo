@@ -6,7 +6,7 @@ import {
 } from "../../../utils/helper";
 
 const markerImageUrl =
-  "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/wonder.jpg";
+  "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/wonder.jpg";
 
 Page({
   data: {
@@ -17,7 +17,7 @@ Page({
 
     this.downloadAsset = Promise.all([
       requestFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/rabbit.glb"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/model/rabbit.glb"
       ),
       requestFile(markerImageUrl),
       downloadMarker(markerImageUrl), // 下载 marker

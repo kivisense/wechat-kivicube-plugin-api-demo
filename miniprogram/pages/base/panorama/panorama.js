@@ -10,12 +10,13 @@ Page({
   onLoad() {
     wx.showLoading({ title: "初始化中..." });
     this.downloadAsset = requestFile(
-      "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/panorama.jpg"
+      "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/panorama/panorama1.jpg"
     );
   },
 
   ready({ detail: view }) {
     this.view = view;
+    this.view.skipCloudar();
   },
 
   async sceneStart() {

@@ -15,19 +15,19 @@ Page({
 
     this.downloadAsset = Promise.all([
       requestFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/model/rabbit.glb"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/model/rabbit.glb"
       ),
       downloadFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/slam.mp4"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/video/ar.mp4"
       ),
       downloadFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/video/glow.mp4"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/video/glow.mp4"
       ),
       requestFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/music-effect.png"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/music-effect.png"
       ),
       requestFile(
-        "https://meta.kivisense.com/kivicube-slam-mp-plugin/demo-assets/image/kivisense-logo.png"
+        "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/image/kivisense-logo.png"
       ),
     ]);
   },
@@ -76,7 +76,7 @@ Page({
       group.add(video);
       group.add(image);
 
-      model3d.scale.setScalar(30);
+      model3d.scale.setScalar(2);
       video.position.set(-1, 1, 0);
       image.position.set(1, 1, 1);
       image.scale.setScalar(0.3);
