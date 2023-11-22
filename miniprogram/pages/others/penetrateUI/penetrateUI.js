@@ -1,7 +1,6 @@
 Page({
   ready({ detail: view }) {
     this.view = view;
-    this.view.skipCloudar();
   },
 
   /**
