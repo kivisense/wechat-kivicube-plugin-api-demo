@@ -43,35 +43,31 @@ Page({
 
   anchored({ detail }) {
     const { markerId } = detail;
+    // 当前锚定到的识别图id
     console.log("anchored", markerId);
 
     // 在锚定到某个marker的时候，先隐藏所有的模型，在识别到我们需要的marker时，将特定的模型展示出来，并播放模型动画。
-    const [markerId1, markerId2] = this.markerIds;
-    this.hideAllObject();
+    const [markerId1, markerId2] = this.markerIdList;
 
-    const showObjPlayAnimation = (objName, animationConfig) => {
-      const obj = this.view.getObject(objName);
-      obj.visible = true;
-      obj.playAnimation(animationConfig);
+    // 简单配置每张识别图上，需要展示哪些内容
+    const makerToObjects = {
+      default: ["skateboarder"],
+      [markerId1]: ["rabbit"],
+      [markerId2]: ["robot"],
     };
 
-    switch (markerId) {
-      case markerId1:
-        showObjPlayAnimation("rabbit", { animationName: "ani", loop: true });
-        break;
+    // 先隐藏所有内容
+    this.view.getAllObject().forEach((obj) => {
+      obj.visible = false;
+    });
 
-      case markerId2:
-        showObjPlayAnimation("robot", { animationName: "Dance", loop: true });
-        break;
-
-      // 默认的 id 则为平台配置的marker
-      default:
-        showObjPlayAnimation("skateboarder", {
-          animationName: "walk",
-          loop: true,
-        });
-        break;
-    }
+    // 再展示当前配置的内容，并播放默认动画
+    const objects = makerToObjects[markerId] || makerToObjects.default;
+    objects.forEach((name) => {
+      const obj = this.view.getObject(name);
+      obj.visible = true;
+      obj.playAnimation({ loop: true });
+    });
   },
 
   async addMarker() {
@@ -86,24 +82,15 @@ Page({
        * @returns {Promsie<Number|Array<Number>>} 识别图Id
        */
       const markerAr = view.getMarkerAR();
-      this.markerIds = await markerAr.setMarker([markerPath1, markerPath2]);
+      this.markerIdList = await markerAr.setMarker([markerPath1, markerPath2]);
 
-      console.warn("setMarker 返回的识别图ID：", this.markerIds);
+      console.warn("setMarker 返回的识别图ID：", this.markerIdList);
 
       // 如果只用作首次定位，用完后可移除marker
       // markerAr.removeMarker(markerId);
     } catch (error) {
       console.error(error);
     }
-  },
-
-  hideAllObject() {
-    this.view.sceneInfo.objects.forEach(({ name }) => {
-      const obj = this.view.getObject(name);
-      if (obj.isBaseObject) {
-        obj.visible = false;
-      }
-    });
   },
 
   unsupport({ detail }) {
