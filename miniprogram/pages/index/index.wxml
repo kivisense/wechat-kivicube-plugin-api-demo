@@ -54,6 +54,7 @@
   <view class="second">
     <navigator url="../world/world-ar/world-ar"> 世界AR场景示例 </navigator>
     <navigator url="../world/world-marker/world-marker"> 世界AR场景自定义 marker </navigator>
+    <navigator url="../world/multiple/simple/multiple-simple"> 多图连续识别 </navigator>
   </view>
 
   <view class="header">其他</view>

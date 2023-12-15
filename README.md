@@ -94,7 +94,9 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 ##### 1.[世界AR场景示例](./miniprogram/pages/world/world-ar/)
 
-##### 1.[世界AR场景 自定义 marker示例](./miniprogram/pages/world/world-marker/)
+##### 2.[世界AR场景 自定义 marker示例](./miniprogram/pages/world/world-marker/)
+
+##### 3.[世界AR场景 多图识别示例（模拟合辑功能）](./miniprogram/pages/world/multiple/simple/)
 
 #### 九、合辑
 
