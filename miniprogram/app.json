@@ -42,11 +42,12 @@
     "pages/plane/auto-locate/auto-locate",
     "pages/roam/roam-ar/roam-ar",
     "pages/world/world-ar/world-ar",
-    "pages/world/world-marker/world-marker"
+    "pages/world/world-marker/world-marker",
+    "pages/world/multiple/simple/multiple-simple"
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.8.5",
+      "version": "2.8.7",
       "provider": "wx3bbab3920eabccb2"
     }
   },
