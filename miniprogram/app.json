@@ -43,11 +43,12 @@
     "pages/roam/roam-ar/roam-ar",
     "pages/world/world-ar/world-ar",
     "pages/world/world-marker/world-marker",
-    "pages/world/multiple/simple/multiple-simple"
+    "pages/world/multiple/simple/multiple-simple",
+    "pages/landmark/landmark-ar/landmark-ar"
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.8.7",
+      "version": "2.9.5",
       "provider": "wx3bbab3920eabccb2"
     }
   },

@@ -10,6 +10,7 @@
   bind:indicatorVisible="indicatorVisible"
   bind:indicatorInvisible="indicatorInvisible"
   bind:sceneStart="sceneStart"
+  bind:touchLocate="touchLocate"
   bind:unsupport="unsupport"
   hideScan
   hidePlaneDetect="{{ hidePlaneDetect }}"

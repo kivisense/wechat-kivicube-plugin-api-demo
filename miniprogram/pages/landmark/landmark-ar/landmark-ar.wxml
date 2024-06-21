@@ -1,0 +1,10 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="JNe2k06CkJtFpkgng7i02mGWPEl5292F"
+  hideTakePhoto="{{true}}"
+  bind:error="error"
+  bind:ready="ready"
+  bind:located="located"
+  bind:lostLocate="lostLocate"
+  landmarkLicense="2b23a21f432a846e816686b23c71fe399a621978adf7918010ca1a13b47bcb68004755deb5e99a07e663f7a9f35e95b9893967fec2c7bd5b70ebfed62d9bb6b0"
+/>
