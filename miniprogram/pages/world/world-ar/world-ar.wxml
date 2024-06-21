@@ -6,9 +6,9 @@
   bind:ready="ready"
   bind:anchored="anchored"
   bind:anchoring="anchoring"
-  bind:ready="ready"
   bind:sceneStart="sceneStart"
   bind:unsupport="unsupport"
+  worldLicense="f2310153bdd8dacd9e3091068935618ee328ce66d09008e5af9e897bd63153934e383b4d9f941e35381b98bf934124cb7f7136392a297042adc6518590697816"
 />
 
 <view hidden="{{!showTip}}" class="tip">

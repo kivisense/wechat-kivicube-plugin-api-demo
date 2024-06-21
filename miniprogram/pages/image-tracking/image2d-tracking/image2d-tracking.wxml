@@ -5,7 +5,7 @@
   bindready="ready"
   bindtracked="tracked"
   bindlostTrack="lostTrack"
-  license="{{license}}"
+  image2dLicense="{{license}}"
 />
 
 <view hidden="{{!showTip}}" class="tip">
