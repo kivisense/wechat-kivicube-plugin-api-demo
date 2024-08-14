@@ -70,25 +70,6 @@ export function downloadFile(url) {
   });
 }
 
-export function downloadMarker(url) {
-  return new Promise((resolve, reject) => {
-    const filename = url.split("?").shift().split("/").pop();
-    const filePath = `${wx.env.USER_DATA_PATH}/__marker-${filename}`;
-    wx.downloadFile({
-      url,
-      filePath,
-      success({ statusCode }) {
-        if (statusCode === 200) {
-          resolve(filePath);
-        } else {
-          reject(new Error(`下载文件(${url})失败, statusCode: ${statusCode}`));
-        }
-      },
-      fail: reject,
-    });
-  });
-}
-
 // 弧度角度转换
 // 角度转弧度
 export function degToRad(degrees) {

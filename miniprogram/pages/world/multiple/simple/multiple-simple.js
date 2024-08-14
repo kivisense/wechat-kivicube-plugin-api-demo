@@ -1,7 +1,7 @@
 import {
   errorHandler,
   showAuthModal,
-  downloadMarker,
+  downloadFile,
 } from "../../../../utils/helper";
 
 const marker1ImageUrl =
@@ -16,8 +16,8 @@ Page({
     wx.showLoading({ title: "初始化中...", mask: true });
 
     this.downloadAsset = Promise.all([
-      downloadMarker(marker1ImageUrl), // 下载 marker1
-      downloadMarker(marker2ImageUrl), // 下载 marker2
+      downloadFile(marker1ImageUrl), // 下载 marker1
+      downloadFile(marker2ImageUrl), // 下载 marker2
     ]);
   },
 

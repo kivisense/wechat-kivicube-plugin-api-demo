@@ -44,7 +44,7 @@
   "condition": {},
   "srcMiniprogramRoot": "miniprogram/",
   "appid": "wx3bbab3920eabccb2",
-  "libVersion": "2.24.1",
+  "libVersion": "3.5.3",
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

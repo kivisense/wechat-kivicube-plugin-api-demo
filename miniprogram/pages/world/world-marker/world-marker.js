@@ -2,7 +2,7 @@ import {
   errorHandler,
   showAuthModal,
   requestFile,
-  downloadMarker,
+  downloadFile,
 } from "../../../utils/helper";
 
 const markerImageUrl =
@@ -20,7 +20,7 @@ Page({
         "https://meta.kivisense.com/kivicube-wechat-mp-plugin/demo-assets/model/rabbit.glb"
       ),
       requestFile(markerImageUrl),
-      downloadMarker(markerImageUrl), // 下载 marker
+      downloadFile(markerImageUrl), // 下载 marker
     ]);
   },
 
