@@ -1,3 +1,5 @@
+const { pixelRatio } = wx.getSystemInfoSync();
+
 Page({
   data: {
     id: "",
@@ -6,6 +8,7 @@ Page({
     autoDownload: true,
     recorderStatus: "初始状态",
     leftTime: 0,
+    recordDPR: pixelRatio,
   },
 
   onLoad({ id }) {
@@ -65,6 +68,10 @@ Page({
     try {
       // 实例化视频录制对象
       this.recorder = this.view.createRecorder({
+        canvasConfig: {
+          // 录制时设备像素比倍数
+          recordDpr: this.data.recordDPR,
+        },
         options: {
           // 录制时长毫秒，如果调用了stop方法，录制会提前结束
           duration: 10 * 1000,
@@ -109,6 +116,12 @@ Page({
     this.recorder.stop();
   },
 
+  onChangeDPR({ detail }) {
+    this.setData({
+      recordDPR: detail.value,
+    });
+  },
+
   enableOnBeforeRender() {
     const { model, recorder } = this;
     const RecorderStatusEnum = recorder.RecorderStatusEnum;
@@ -140,7 +153,7 @@ Page({
 
   onUnload() {
     this.disableOnBeforeRender();
-    this.recorder.destroy();
+    this.recorder?.destroy?.();
     this.recorder = null;
     this.model = null;
     this.view = null;

@@ -14,6 +14,16 @@
   <view class="time">
     {{ recorderStatus }} | {{ leftTime }}s
   </view>
+  <view class="item" wx:if="{{!hideInput}}">
+    <text class="label">DPR</text>
+    <input
+      class="input"
+      type="digit"
+      placeholder="录制时设备像素比倍数"
+      value="{{recordDPR}}"
+      bindinput="onChangeDPR"
+    />
+  </view>
   <button bindtap="startRecord" disabled="{{recordDisable}}">开始录制</button>
   <button bindtap="stopRecord">结束录制</button>
 </view>
