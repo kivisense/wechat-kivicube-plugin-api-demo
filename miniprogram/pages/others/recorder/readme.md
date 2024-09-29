@@ -17,7 +17,7 @@ https://www.yuque.com/kivicube/manual/kivicube-features#AhcpJ
 
 | 属性 | 类型     | 默认值 | 必填 | 说明        |
 |---|--------|-----|----|-----------|
-| recordDpr  | number | 1  | 否  | 录制时的设备像素比 |
+| recordDpr  | number | 2  | 否  | 录制时的设备像素比 |
 
 ### recorder初始化示例
 ```javascript

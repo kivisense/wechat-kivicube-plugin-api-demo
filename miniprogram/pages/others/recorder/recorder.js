@@ -1,5 +1,3 @@
-const { pixelRatio } = wx.getSystemInfoSync();
-
 Page({
   data: {
     id: "",
@@ -8,7 +6,7 @@ Page({
     autoDownload: true,
     recorderStatus: "初始状态",
     leftTime: 0,
-    recordDPR: pixelRatio,
+    recordDPR: 2,
   },
 
   onLoad({ id }) {
