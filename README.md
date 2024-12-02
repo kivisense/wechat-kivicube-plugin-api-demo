@@ -38,7 +38,7 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 ##### 11.[灯光](./miniprogram/pages/base/light/)
 
-##### 12.[自定义环境贴图](./miniprogram/pages/base/envMap/)
+##### 12.[自定义环境贴图](./miniprogram/pages/base/env-map/)
 
 ##### 13.[素材管理 包含自定义增删改素材](./miniprogram/pages/base/manage/)
 
