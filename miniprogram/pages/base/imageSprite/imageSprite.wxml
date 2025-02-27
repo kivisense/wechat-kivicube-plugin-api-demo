@@ -4,6 +4,7 @@
   hideTakePhoto="{{true}}"
   bindready="ready"
   bindsceneStart="sceneStart"
+  bindloadSceneEnd="loadEnd"
 />
 
 <view class="operation" wx:if="{{showOperate}}">

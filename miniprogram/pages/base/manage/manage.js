@@ -23,6 +23,9 @@ Page({
      * 详细请参考README.md之中的“常见问题”说明。
      */
     this.view = view;
+  },
+
+  loadEnd() {
     this.view.skipCloudar();
   },
 
