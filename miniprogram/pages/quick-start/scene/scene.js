@@ -59,6 +59,16 @@ Page({
   },
 
   /**
+   * 获取场景下载进度
+   * 注意：
+   * 2.14.0以前 进度数值为 e.detail
+   * 2.14.0之后 进度数值改为 e.detail.progress
+   */
+  downloadAssetProgress(e) {
+    console.log(e.detail.progress);
+  },
+
+  /**
    * 通过高级API对象，获取具体的素材对象。
    */
   sceneStart() {

@@ -3,5 +3,6 @@
   scene-id="9vR08tpLesfKVWs2XbbnNKSsX3JqpaAp"
   bindready="ready"
   bindloadSceneEnd="loadEnd"
+  binddownloadAssetProgress="downloadAssetProgress"
   bindsceneStart="sceneStart"
 />
