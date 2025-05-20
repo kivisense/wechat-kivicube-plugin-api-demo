@@ -48,7 +48,7 @@
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.16.2",
+      "version": "2.16.11",
       "provider": "wx3bbab3920eabccb2"
     }
   },
