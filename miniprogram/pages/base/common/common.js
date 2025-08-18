@@ -1,6 +1,31 @@
 Page({
   ready({ detail: view }) {
     this.view = view;
+
+    // 暂停场景的加载。【也支持合辑，一样的方式】
+    // 注意：此方法只能在ready事件监听函数的同步执行栈中，才能调用此方法。异步调用无效(比如setTimeout后)。
+    view.pauseLaunch();
+    // 此时可自定义逻辑，比如验证camera权限、检查网络环境、是否具备打开资格、是否已登录等。
+    wx.showModal({
+      title: "提示",
+      content: "点击确定才开始加载场景",
+      success: ({ confirm }) => {
+        if (confirm) {
+          // 恢复并继续加载场景。
+          view.resumeLaunch();
+        }
+      },
+    });
+
+    // 如果要异步操作后(比如请求服务器数据)，才能知道是否需要暂停，则可以传入一个异步函数。
+    /*
+    view.pauseLaunch(async () => {
+      // 模拟异步操作，比如请求服务器数据。
+      await new Promise((resolve) => setTimeout(resolve, 1000));
+      // 返回true(或其他真值)表示需要暂停加载，返回false(或其他假值)，则不暂停。
+      return true;
+    });
+    */
   },
 
   /**
