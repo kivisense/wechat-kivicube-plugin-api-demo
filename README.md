@@ -138,7 +138,8 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 | stopCloudar | Function | 停止云识别扫描功能 | [pages/collection/cloudar/](./miniprogram/pages/collection/cloudar/) |
 | openScene | Function | 打开指定的场景。【注意：有场景正在打开过程中(sceneStart事件触发之前)，则调用无效】 | [pages/collection/scene/](./miniprogram/pages/collection/scene/) |
 | closeCurrentScene | Function | 关闭当前已打开的场景 | [pages/collection/scene/](./miniprogram/pages/collection/scene/) |
-| takePhoto | Function | 拍照 | [pages/collection/collectionPhoto/](./miniprogram/pages/collection/collectionPhoto/) |
+| pauseLaunch | Function | 暂停合辑启动过程 | [pages/base/common/](./miniprogram/pages/base/common/) |
+| resumeLaunch | Function | 继续合辑启动过程 | [pages/base/common/](./miniprogram/pages/base/common/) |
 
 ### view
 
@@ -177,6 +178,8 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 | remove | Function | 移除场景中的某个素材内容 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
 | destroyObject | Function | 销毁创建的某个3D对象。(回收内存) | [pages/base/sample/](./miniprogram/pages/base/manage/) |
 | clear | Function | 清空场景中所有的素材内容 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| pauseLaunch | Function | 暂停场景启动过程 | [pages/base/common/](./miniprogram/pages/base/common/) |
+| resumeLaunch | Function | 继续场景启动过程 | [pages/base/common/](./miniprogram/pages/base/common/) |
 | isTracking1 | Boolean | 是否是图像追踪版本1 | [待新增](./miniprogram/pages/) |
 | isTracking2 | Boolean | 是否是图像追踪版本2 | [待新增](./miniprogram/pages/) |
 | createRecorder | Function | 创建AR内容录制器, 插件版本 | [pages/others/record/](./miniprogram/pages/others/recorder/) |
