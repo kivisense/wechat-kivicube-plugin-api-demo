@@ -161,7 +161,8 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 | createPanorama | Function | 创建一个全景图对象 | [pages/base/panorama/](./miniprogram/pages/base/panorama/) |
 | createPanoramaVideo | Function | 创建一个全景视频素材对象 | [pages/base/panorama-video/](./miniprogram/pages/base/panorama-video/) |
 | createAudio | Function | 创建一个音频素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
-| createImageSprite | Function | 创建一个精灵图（动图）素材对象 | [pages/base/manage/](./miniprogram/pages/base/manage/) |
+| createImageSprite | Function | 创建一个精灵图（动图）素材对象 | [pages/base/manage/](./miniprogram/pages/base/imageSprite) |
+| createAnimatedImage | Function | 创建一个gif（动图）素材对象 | [pages/base/manage/](./miniprogram/pages/base/animatedImage/) |
 | createGroup | Function | 创建一个组合3D对象。可用来装载其他3D对象(包括组合) | [pages/base/group/](./miniprogram/pages/base/group/) |
 | createSkyBox | Function | 创建一个天空盒对象 | [pages/base/sky-box/](./miniprogram/pages/base/sky-box/) |
 | createEnvMapByCubeMap | Function | 创建一个基于6张图组成天空盒的环境贴图对象 | [pages/base/env-map/](./miniprogram/pages/base/env-map/) |

@@ -13,6 +13,7 @@
     <navigator url="../base/group/group"> 组合容器 </navigator>
     <navigator url="../base/mask/mask"> 将素材指定为遮罩 </navigator>
     <navigator url="../base/imageSprite/imageSprite"> 精灵图 </navigator>
+    <navigator url="../base/animatedImage/animatedImage"> 动图（gif） </navigator>
     <navigator url="../base/audio/audio"> 音频 </navigator>
     <navigator url="../base/video/video"> AR视频/透明视频 </navigator>
     <navigator url="../base/panorama/panorama"> 全景图 </navigator>

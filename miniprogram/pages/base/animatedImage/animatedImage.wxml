@@ -1,0 +1,14 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="UV8R22D655eOMHpbG31thajfq9117eql"
+  hideTakePhoto="{{true}}"
+  bindready="ready"
+  bindsceneStart="sceneStart"
+  bindloadSceneEnd="loadEnd"
+/>
+
+<view class="operation" wx:if="{{showOperate}}">
+  <button bind:tap="play">播放动图</button>
+  <button bind:tap="pause">暂停动图</button>
+  <button bind:tap="stop">停止动图</button>
+</view>

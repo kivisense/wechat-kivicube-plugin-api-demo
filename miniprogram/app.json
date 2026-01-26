@@ -9,6 +9,7 @@
     "pages/base/group/group",
     "pages/base/mask/mask",
     "pages/base/imageSprite/imageSprite",
+    "pages/base/animatedImage/animatedImage",
     "pages/base/panorama/panorama",
     "pages/base/panorama-video/panorama-video",
     "pages/base/sky-box/sky-box",
@@ -48,7 +49,7 @@
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.17.3",
+      "version": "2.17.9",
       "provider": "wx3bbab3920eabccb2"
     }
   },
