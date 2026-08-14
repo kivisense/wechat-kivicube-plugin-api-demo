@@ -41,6 +41,7 @@
     "pages/others/model-render/model-render",
     "pages/plane/indicator/indicator",
     "pages/plane/auto-locate/auto-locate",
+    "pages/plane/force-gyroscope/force-gyroscope",
     "pages/roam/roam-ar/roam-ar",
     "pages/world/world-ar/world-ar",
     "pages/world/world-marker/world-marker",
@@ -49,7 +50,7 @@
   ],
   "plugins": {
     "kivicube": {
-      "version": "2.17.9",
+      "version": "2.17.24",
       "provider": "wx3bbab3920eabccb2"
     }
   },

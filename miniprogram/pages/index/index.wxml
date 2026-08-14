@@ -45,6 +45,9 @@
   <view class="second">
     <navigator url="../plane/indicator/indicator"> 使用指示器点击放置 </navigator>
     <navigator url="../plane/auto-locate/auto-locate"> 检测到平面自动放置 </navigator>
+    <navigator url="../plane/force-gyroscope/force-gyroscope">
+      强制切换陀螺仪
+    </navigator>
   </view>
 
   <view class="header">漫游AR场景</view>

@@ -86,6 +86,8 @@ kivicube 2.0 迁移指南请见[链接](./HowToUpgrade.md);
 
 ##### 2.[检测到平面自动放置](./miniprogram/pages/plane/auto-locate/)
 
+##### 3.[强制切换陀螺仪](./miniprogram/pages/plane/force-gyroscope/)
+
 #### 七、漫游AR场景
 
 ##### 1.[漫游AR场景示例](./miniprogram/pages/roam/roam-ar/)

@@ -1,0 +1,27 @@
+<kivicube-scene
+  class="kivicube"
+  scene-id="7fC4I505Gi85vdJS127C4HgWJ7s10F8B"
+  hideTakePhoto="{{true}}"
+  bind:ready="ready"
+  bind:planeDetectStart="planeDetectStart"
+  bind:sceneStart="sceneStart"
+  bind:unsupport="unsupport"
+  bind:error="error"
+/>
+
+<view wx:if="{{sceneStarted}}" class="operation">
+  <button
+    class="operation-button"
+    disabled="{{switching || isGyroscope}}"
+    bindtap="enableForceGyroscope"
+  >
+    开启强制陀螺仪
+  </button>
+  <button
+    class="operation-button"
+    disabled="{{switching || !isGyroscope}}"
+    bindtap="disableForceGyroscope"
+  >
+    关闭强制陀螺仪
+  </button>
+</view>

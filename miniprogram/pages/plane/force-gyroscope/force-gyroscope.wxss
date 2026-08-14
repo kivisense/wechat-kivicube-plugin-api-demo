@@ -1,0 +1,21 @@
+.kivicube {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.operation {
+  position: fixed;
+  z-index: 1;
+  right: 32rpx;
+  bottom: calc(env(safe-area-inset-bottom) + 32rpx);
+  left: 32rpx;
+  display: flex;
+  justify-content: space-between;
+}
+
+.operation-button {
+  width: 320rpx;
+  margin: 0;
+  font-size: 28rpx;
+}
